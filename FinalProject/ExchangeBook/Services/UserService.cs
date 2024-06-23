@@ -26,7 +26,7 @@ namespace ExchangeBook.Services
             _logger = logger;
             _mapper = mapper;
         }
-        //df
+        //
         public async Task<string> CreateUserToken(int userId, string? username, string? email, UserRole? userRole,string? appSecurityKey)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(appSecurityKey!));

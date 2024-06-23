@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FinalProject",
+    "\\FinalProject\\ExchangeBook",
+    "\\FinalProject\\ExchangeBook\\Services"
   ],
+  "SelectedNode": "\\FinalProject\\ExchangeBook\\Services\\UserService.cs",
   "PreviewInSolutionExplorer": false
 }
