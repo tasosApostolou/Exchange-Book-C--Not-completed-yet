@@ -5155,11 +5155,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\FinalProject\\ExchangeBook\\ExchangeBook.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Csharp-Rest-API-Exercise\\FinalProject\\ExchangeBook\\ExchangeBook.csproj",
       "projectName": "ExchangeBook",
-      "projectPath": "C:\\Users\\User\\Desktop\\FinalProject\\ExchangeBook\\ExchangeBook.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\Csharp-Rest-API-Exercise\\FinalProject\\ExchangeBook\\ExchangeBook.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\FinalProject\\ExchangeBook\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Csharp-Rest-API-Exercise\\FinalProject\\ExchangeBook\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

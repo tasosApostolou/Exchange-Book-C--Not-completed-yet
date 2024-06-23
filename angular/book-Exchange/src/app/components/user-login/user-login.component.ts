@@ -43,8 +43,7 @@ export class UserLoginComponent {
           userId: decodedTokenSubject.userId,
           sub: decodedTokenSubject.sub,
           role: decodedTokenSubject.role,
-          roleEntityId: Number(decodedTokenSubject.roleEntityId),
-          phoneNumber:decodedTokenSubject.phoneNumber
+          roleEntityId: Number(decodedTokenSubject.roleEntityId)
         });
         const rout = {
           'PERSONAL':'person-welcome',

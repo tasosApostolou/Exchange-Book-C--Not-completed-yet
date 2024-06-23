@@ -14,7 +14,7 @@ export interface LoggedInUser{
     sub:string; // username taken from jwt as sub
     role :string;
     roleEntityId:number //PERSONAL or STORE logged in user
-    phoneNumber:string
+    // phoneNumber:string
 
     
 }

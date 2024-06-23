@@ -108,18 +108,6 @@ namespace ExchangeBook.Controllers
             return Ok(returnedUser);
         }
 
-        //[HttpGet("{username}")]
-        //public async Task<ActionResult<UserTeacherReadOnlyDTO>> GetUserTeacherByUsername(string? username)
-        //{
-        //    var returnedUserTeacherDTO = await _applicationService.UserService.GetUserTeacherByUsername(username);
-        //    if (returnedUserTeacherDTO is null)
-        //    {
-        //        throw new UserNotFoundException("UserNotFound");
-        //    }
-
-        //    return Ok(returnedUserTeacherDTO);
-        //}
-
         [HttpPost]
         public async Task<ActionResult<JwtTokenDTO>> LoginUserAsync(UserLoginDTO credentials)
         {
@@ -128,18 +116,8 @@ namespace ExchangeBook.Controllers
             {
                 throw new UnauthorizedAccessException("BadCredentials");
             }
-            int? roleEntityId = null;
-            if (user.UserRole.Value.ToString().Equals("PERSONAL"))
-            {
-                roleEntityId = user.Person?.Id;
-            }
-            if (user.UserRole.Value.ToString().Equals("STORE"))
-            {
-                roleEntityId = user.Store?.Id;
-            }
-
             var userToken = await _applicationService.UserService.CreateUserToken(user.Id, user.Username!, user.Email!,
-                user.UserRole,roleEntityId, _configuration["Authentication:SecretKey"]!);
+                user.UserRole, _configuration["Authentication:SecretKey"]!);
 
             JwtTokenDTO token = new()
             {

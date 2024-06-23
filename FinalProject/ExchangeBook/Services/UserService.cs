@@ -27,25 +27,22 @@ namespace ExchangeBook.Services
             _mapper = mapper;
         }
 
-        public async Task<string> CreateUserToken(int userId, string? username, string? email, UserRole? userRole, int? roleentityId,string? appSecurityKey)
+        public async Task<string> CreateUserToken(int userId, string? username, string? email, UserRole? userRole,string? appSecurityKey)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(appSecurityKey!));
             var signingCredentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
             
             int? roleEntityId = 0;
             string? phoneNumber = "";
-            Console.WriteLine("roleee:" + (userRole.Value == UserRole.STORE));
             if(userRole.Value == UserRole.PERSONAL)
             {
                 UserPersonReadOnlyDTO? userPerson = await GetUserPersonByUsername(username);
                 roleEntityId = userPerson.personId;
-                phoneNumber = userPerson.PhoneNumber;
             }
             if (userRole.Value == UserRole.STORE)
             {
                 UserStoreReadOnlyDTO? userStore = await GetUserStoreByUsername(username);
                 roleEntityId = userStore.storeId;
-                phoneNumber = "6989999999";
 
             }
             var claimsInfo = new List<Claim>
@@ -59,7 +56,6 @@ namespace ExchangeBook.Services
                 new Claim("id", userId.ToString()),
                 new Claim("email", email!),
                 new Claim("role", userRole.Value.ToString()!),
-                new Claim("phoneNumber", phoneNumber),
                 new Claim("roleEntityId", roleEntityId.ToString())
                 //new Claim("roleEntityId", userPerson.personId.ToString())
 
