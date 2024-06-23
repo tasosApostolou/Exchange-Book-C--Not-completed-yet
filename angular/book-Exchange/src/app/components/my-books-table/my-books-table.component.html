@@ -1,0 +1,27 @@
+<span>Your Book List</span>
+<table class="table table-bordered table-striped text-wrap">
+    <thead>
+      <tr class="align-middle text-center small">
+        <th role="button" >
+          ID
+        </th>
+        <th role="button" >
+          Title
+        </th>
+        <th role="button" >author </th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (book of books; track book) {
+        <tr class="align-middle">
+          <td>{{ book.id }}</td>
+          <td>{{ book.title }}</td>
+          <td>{{ book.author.name  }}</td>
+          <td class="btn btn-primary  ">  
+            <button mat-fab color="primary" class="rounded-2 " (click)="emitBookId(book.id)"aria-label="Example icon button with a delete icon"> Delete
+        <mat-icon>delete</mat-icon>
+      </button></td>
+        </tr>
+      }
+    </tbody>
+  </table>

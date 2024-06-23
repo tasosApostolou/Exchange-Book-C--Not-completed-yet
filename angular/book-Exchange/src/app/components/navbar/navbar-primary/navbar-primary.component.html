@@ -1,0 +1,31 @@
+<nav class=" bg-primary d-flex justify-content-between align-items-center p-3">
+  <div class=" navbar-links"><a class="brand-title" routerLink="">Book Exchange-CF5</a></div>
+
+  <input type="checkbox" id="toggle-button" class="toggle-checkbox">
+  <label for="toggle-button" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+  </label>
+
+  <div class="justify-content-between navbar-links ">
+    <ul class=" navbar-links align-items-center">
+      <li><button type="button" class="btn right-menu dropdown-toggle right-hover" [mat-menu-trigger-for]="register">
+        REGISTER</button>
+        <mat-menu #register="matMenu">
+          <ul class="dropdown-header">
+            <li><a role="button" class="hover dropdown-item" routerLink="user-registration">Εγγραφη προσωπικου χρηστη</a></li>
+            <li><a class="hover dropdown-item" role="button" routerLink="store-registration">Εγγραφη χρήστη καταστήματος</a></li>
+          </ul>
+        </mat-menu></li>
+        <li> <span role="button" routerLink="login" class="right-menu right-hover me-3 d-flex gap-2 align-items-center ">
+        Login
+        <mat-icon
+          role="button"
+          class="right-hover ">
+          login
+        </mat-icon>
+      </span></li>
+  </ul>
+  </div>
+</nav>

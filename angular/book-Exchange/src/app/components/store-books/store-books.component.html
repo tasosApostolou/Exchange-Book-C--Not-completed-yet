@@ -1,0 +1,39 @@
+<span>Welcome, {{ user().sub }} </span> <!--sub is username from jwt-->
+@if(books.length === 0){
+  <Span>No Books Added.</Span>
+  <p>add new book from navbar</p>
+}@else {
+<span>Your Book List</span>
+<table class="table table-bordered table-striped text-wrap">
+    <thead>
+      <tr class="align-middle text-center small">
+        <th role="button" >
+          ID
+        </th>
+        <th role="button" >
+          Title
+        </th>
+        <th role="button" >author </th>
+        <th>Price$</th>
+     
+
+      </tr>
+    </thead>
+    <tbody>
+      @for (storeBook of storeBooks; track storeBook) {
+        <tr class="align-middle">
+          <td>{{ storeBook.book.id }}</td>
+          <td>{{ storeBook.book.title }}</td>
+          <td>{{ storeBook.book.author.name  }}</td>
+          <td>{{ storeBook.price  }}</td>
+          <td class="btn btn-primary  ">  
+            <button mat-fab color="primary" class="rounded-2 " (click)="deleteBook(storeBook.book.id)"aria-label="Example icon button with a delete icon"> Delete
+        <mat-icon>delete</mat-icon>
+      </button></td>
+        </tr>
+      }
+    </tbody>
+  </table>
+}
+
+

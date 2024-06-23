@@ -1,0 +1,7 @@
+@if (!user()) {
+    <app-navbar-primary></app-navbar-primary>
+    } @else if(user().role==="PERSONAL") {
+    <app-navbar-personal></app-navbar-personal>
+    }@else {
+    <app-navbar-store></app-navbar-store>
+    }

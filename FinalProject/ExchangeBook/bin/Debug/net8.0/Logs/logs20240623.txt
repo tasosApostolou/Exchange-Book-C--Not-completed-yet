@@ -1,0 +1,5 @@
+[23-06-2024 14:01:12857 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager ] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[23-06-2024 14:01:12980 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "http://localhost:5000"
+[23-06-2024 14:01:12984 +03:00 Microsoft.Hosting.Lifetime ] Application started. Press Ctrl+C to shut down.
+[23-06-2024 14:01:12986 +03:00 Microsoft.Hosting.Lifetime ] Hosting environment: "Production"
+[23-06-2024 14:01:12988 +03:00 Microsoft.Hosting.Lifetime ] Content root path: "C:\Users\User\Desktop\FinalProject\ExchangeBook\bin\Debug\net8.0"

@@ -1,0 +1,65 @@
+
+<nav class="navbar navbar-dark bg-primary justify-content-between">
+    <a
+      role="button"
+      class="navbar-brand ms-3"
+      routerLink="store-welcome">
+      HOME
+    </a>
+
+    <a
+    role="button"
+    class="navbar-brand ms-3"
+    routerLink="store-books">
+    My books
+  </a>
+    <!-- @if (user().role==="STORE") { -->
+      <a
+      role="button"
+      class="navbar-brand  ms-3"
+      routerLink="add-book-store"
+      >
+      Add New Book
+    </a>
+      <button mat-icon-button [matMenuTriggerFor]="notification">
+      <mat-icon role="banner" matBadge={{matBadgeValue()}} matBadgeColor="warn">notifications</mat-icon>
+    </button>
+    <button mat-icon-button [matMenuTriggerFor]="edit"> <mat-icon>settings</mat-icon></button>
+    <mat-menu #edit="matMenu"><p routerLink="update-store" role="button" class="hover">Ενημέρωση στοιχείων προφίλ</p> <p routerLink="manage-account" role="button" class="hover" >Διαχειρηση λογαριασμού</p></mat-menu>
+    
+
+     <mat-menu #notification="matMenu">
+     @for(notif of notifications; track notif){
+        <div routerLink="books-table" (click)="notificationClicked(notif)"  class="hover {{bgNotif(notif)}} border-bottom" role="banner " mat-menu-item >
+          {{ notif.createdAt }}
+         <p  role="button">Ο χρηστης  <span class="text-primary  ">{{notif.interested.username}}</span> ενδιαφέρεται για το βιβλίο σας με τιτλο: <span class="text-bg-danger">{{notif.book.title}}</span> </p>
+          <p role="button">Δειτε τα βιβλία του</p>
+        </div>
+      }
+    </mat-menu>
+      <span class="me-3 d-flex gap-2 text-light">
+       logout
+        <mat-icon
+          role="button"
+          (click)="logout()">
+          logout
+        </mat-icon>
+      </span>
+  </nav>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+

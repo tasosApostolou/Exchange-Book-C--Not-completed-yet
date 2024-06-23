@@ -1,0 +1,8 @@
+<span>Welcome, {{ user().sub }} </span> <!--sub is username from jwt-->
+@if(!books.length){
+  <Span>No Books Added.</Span>
+  <p>add new book from navbar</p>
+}@else {
+  <app-my-books-table [books]="books" (emitedBookId)="deleteBook($event)"></app-my-books-table>
+}
+

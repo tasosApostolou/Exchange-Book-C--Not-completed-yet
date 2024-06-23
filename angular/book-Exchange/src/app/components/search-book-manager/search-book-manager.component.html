@@ -1,0 +1,10 @@
+<app-search-book-form
+ (formValue)="formResults($event)"></app-search-book-form>
+ 
+@if(choice==='others'){
+    <app-books-with-persons [data]="booksWithPersons"></app-books-with-persons>
+}
+@if(choice === 'stores') {
+     <app-books-in-stores [storeBooks]="storeBooks"></app-books-in-stores>
+     
+}

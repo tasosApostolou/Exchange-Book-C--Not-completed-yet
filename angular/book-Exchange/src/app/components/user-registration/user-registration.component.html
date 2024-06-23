@@ -1,0 +1,138 @@
+@if(registrationStatus.message === "Not Attempted yet"){
+<form [formGroup]="form" class="d-flex mt-5   flex-column ">
+    <mat-form-field>
+        <mat-label>
+            Username
+        </mat-label>
+        <input
+        matInput
+        type="text"
+        formControlName="Username" 
+       />
+       @if(form.get('Username').invalid && form.get('Username').touched){
+        <mat-error>username is required</mat-error>
+       }
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>
+            Email
+        </mat-label>
+        <input
+        matInput
+        type="text"
+        formControlName="Email" 
+       />
+       @if(form.get('Email').invalid && form.get('Email').touched){
+        <mat-error>Email is required</mat-error>
+       }
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>
+            Password
+        </mat-label>
+        <input
+        matInput
+        type="password"
+        formControlName="Password" 
+       />
+       @if(form.get('Password').invalid && form.get('Password').touched){
+        <mat-error>password is missing or invalid</mat-error>
+       }
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>
+            Confirm Password
+        </mat-label>
+        <input
+        matInput
+        type="password"
+        formControlName="confirmPassword" 
+       />
+       @if(form.get("confirmPassword").hasError("passwordMismatch")){
+        <mat-error>Password do not match</mat-error>
+       }@else {
+       @if(
+        form.get('confirmPassword').invalid && form.get('confirmPassword').touched){
+        <mat-error>password is missing or invalid</mat-error>
+       }
+    }
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>
+            Firstname
+        </mat-label>
+        <input
+        matInput
+        type="text"
+        formControlName="Firstname" 
+       />
+       @if(form.get('Firstname').invalid && form.get('Firstname').touched){
+        <mat-error>firstname is required</mat-error>
+       }
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>
+            Lastname
+        </mat-label>
+        <input
+        matInput
+        type="text"
+        formControlName="Lastname" 
+       />
+       @if(form.get('Lastname').invalid && form.get('Lastname').touched){
+        <mat-error>lastname is required</mat-error>
+       }
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>
+            PhoneNumber
+        </mat-label>
+        <input
+        matInput
+        type="text"
+        formControlName="PhoneNumber" 
+       />
+       @if(form.get('PhoneNumber').invalid && form.get('PhoneNumber').touched){
+        <mat-error>PhoneNumber is required</mat-error>
+       }
+    </mat-form-field>
+    
+    
+    <mat-form-field>
+        <mat-label>Role</mat-label>
+        <mat-select type="text" formControlName="UserRole">
+        <mat-option value="PERSONAL"
+        >Personal User</mat-option
+        >
+        <!-- <mat-option value="STORE">Store User</mat-option> -->
+        </mat-select>
+        </mat-form-field>
+</form>
+<button
+    mat-flat-button
+    color="primary"
+    [disabled]="form.invalid"
+    (click)="onSubmit(form.value)">Register
+</button>
+}@else {
+    @if(registrationStatus.succes){
+        <div class="alert alert-success mt-2 w-50 text-wrap">
+            <span>Success: {{registrationStatus.message}}</span>
+        </div>
+        <button
+        mat-flat-button
+        color="primary"
+        class="mt-2 "
+        (click)="navigateLogin()">login
+        </button>
+    }@else {
+        <div class="alert alert-danger mt-2 w-50 text-wrap">{{registrationStatus.message}}</div>
+        <button
+        mat-flat-button
+        color="primary"
+        class="mt-2 "
+        (click)="registerUser()">
+            Try register again
+        </button>
+    }
+}

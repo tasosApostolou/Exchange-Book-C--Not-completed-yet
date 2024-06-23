@@ -1,0 +1,31 @@
+<table class="table-size mt-3 table table-bordered table-striped text-wrap">
+    <thead>
+      <tr class="align-middle text-center small">
+        <th>Buy</th>
+        <th role="button" >
+          Store brand name
+        </th>
+        <th role="button" >
+            address
+          </th>
+        <th role="button" >
+          Title book
+        </th>
+        <th role="button" >author</th>
+        <th role="button" >price</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (storeBook of storeBooks; track storeBook){
+          <tr role="button" class="align-middle">
+            <td class="w-10"><mat-icon (click)="buyBook()">add_shopping_cart</mat-icon></td>
+            <td><a class="text-primary">{{storeBook.store.name}}</a></td>
+            <td>{{storeBook.store.address}}</td>
+            <td>{{storeBook.book.title}}</td>
+            <td>{{storeBook.book.author.name}}</td>
+            <td>{{storeBook.price}} $</td>
+          </tr>
+
+      }
+    </tbody>
+  </table>

@@ -1,0 +1,42 @@
+<h1>Ενημέρωση στοιχείων προφίλ</h1>
+<span></span>
+<form
+  [formGroup]="form"
+  (ngSubmit)="onSubmit()"
+  class="d-flex flex-column gap-3 w-50">
+  <div class="form-group">
+    <label for="firstname">firstname:</label>
+    <input
+      type="text"
+      id="firstname"
+      class="form-control"
+      formControlName="firstname" />
+  </div>
+  <div class="form-group">
+    <label for="lastname">lastname</label>
+    <input
+      type="text"
+      id="lastname"
+      class="form-control"
+      formControlName="lastname" />
+  </div>
+  <button
+    type="submit"
+    class="btn btn-primary"
+    >
+    <!-- [disabled]="!form.valid" -->
+
+    update
+  </button>
+  
+  @if (invalidUpdate) {
+    <div class="alert alert-danger">
+      <strong>Error in update your personal elements. Try again</strong>
+    </div>
+  }@else {
+    @if(clicked){
+      <p class="text-success alert text-wrap alert-success">Update succesfully firstname:{{updatedFirstname}}, lastname:{{updatedLAstname}}</p>
+    }
+
+  }
+</form>

@@ -1,0 +1,30 @@
+<form [formGroup]="form" class="d-flex mt-5 flex-column ">
+  <mat-form-field>
+    <mat-label>Select search</mat-label>
+    <mat-select type="text" formControlName="searching">
+    <mat-option value="others"
+    >search for exchange in other users</mat-option
+    >
+    <mat-option value="stores">Search in stores</mat-option>
+    </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>
+            title
+        </mat-label>
+        <input
+        matInput
+        type="text"
+        formControlName="title" 
+       />
+       @if(form.get('title').invalid && form.get('title').touched){
+        <mat-error>username is required</mat-error>
+       }
+    </mat-form-field>
+    <button
+    mat-flat-button class="btn btn-primary"
+    color="primary"
+    [disabled]="form.invalid"
+    (click)="onSubmit()">Search
+</button>
+</form>

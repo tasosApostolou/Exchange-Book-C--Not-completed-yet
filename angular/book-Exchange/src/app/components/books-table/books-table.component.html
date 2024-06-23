@@ -1,0 +1,34 @@
+<table class="table table-bordered table-striped text-wrap">
+    <thead>
+      <tr class="align-middle text-center small">
+        <th role="button" >
+          Interest
+        </th>
+        <th role="button" >
+          Title
+        </th>
+        <th role="button" >author </th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (book of books; track book) {
+        <tr class="align-middle"
+            class="w-10">
+            <td class="w-10"><mat-icon role="button" (click)="interest($event,book)">thumb_up</mat-icon></td>
+          <td>{{ book.title }}</td>
+          <td>{{ book.author.name  }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+
+
+
+
+
+
+
+
+
+
+  

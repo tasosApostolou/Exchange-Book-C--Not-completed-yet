@@ -1,0 +1,66 @@
+@if (user()) {
+<nav class="navbar navbar-dark bg-primary justify-content-between">
+    <a
+      role="button"
+      class="navbar-brand ms-3"
+      routerLink="person-welcome">
+      Home
+    </a>
+    
+    <!-- <div>
+      <app-list-group-menu class="d-flex "></app-list-group-menu>
+    </div> -->
+    <a
+    role="button"
+    class="navbar-brand ms-3"
+    routerLink="my-books">
+    My books
+  </a>
+      <a
+      role="button"
+      class="navbar-brand ms-3"
+      routerLink="search-book-manager">
+      Find book
+    </a>
+      <a
+      role="button"
+      class="navbar-brand  ms-3"
+      routerLink="add-book-person"
+      >
+      Add New Book
+    </a>
+    
+    <!-- <a role="button">{{noti}}</a> -->
+    <button mat-icon-button [matMenuTriggerFor]="notification">
+      <mat-icon role="banner" matBadge={{matBadgeValue()}} matBadgeColor="warn">notifications</mat-icon>
+    </button>
+    <button mat-icon-button [matMenuTriggerFor]="edit"> <mat-icon>settings</mat-icon></button>
+    <mat-menu #edit="matMenu"><p routerLink="update" role="button" class="hover">Ενημέρωση στοιχείων προφίλ</p> <p routerLink="manage-account" role="button" class="hover" >Διαχειρηση λογαριασμού</p></mat-menu>
+    
+    
+    <!--on notificationClicked make a put request in order to update notification as 'isSeen' and navigating in routerLink with interestedUser's books table
+      bgNotif() returns 'bg-light' if (!notification.isSeen)-->
+     <mat-menu #notification="matMenu">
+     @for(notif of notifications; track notif){
+        <div routerLink="books-table" (click)="notificationClicked(notif)"  class="hover {{bgNotif(notif)}} border-bottom" role="banner " mat-menu-item >
+          <p>{{notif.createdAt}}</p>
+         <p  role="button">Ο χρηστης  <span class="text-primary  ">{{notif.interested.username}}</span> ενδιαφέρεται για το βιβλίο σας με τιτλο: <span class="text-bg-danger">{{notif.book.title}}</span> </p>
+          <p role="button">Δειτε τα βιβλία του</p>
+        </div>
+      }
+    </mat-menu>
+      <span class="me-3 d-flex gap-2 text-light">
+       logout
+        <mat-icon
+          role="button"
+          (click)="logout()">
+          logout
+        </mat-icon>
+      </span>
+  </nav>
+}
+
+
+
+
+

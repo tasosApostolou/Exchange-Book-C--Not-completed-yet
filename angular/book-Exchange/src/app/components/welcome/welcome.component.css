@@ -1,0 +1,199 @@
+.nav-bar {
+  background-color: royalblue;
+  width: 100%;
+  height: 35px;
+}
+.navbar-brand {
+  margin-left: .5rem;
+}
+mat-row {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%; 
+}
+
+.notification-wrapper {
+  position: relative;
+  padding: 8px 15px;
+  float: right;
+  border-radius: 5px;
+}
+
+.notification-wrapper .notification-btn {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.notification-wrapper .notification-btn:hover {
+  color: royalblue;
+  padding: 1px;
+  background-color: #ffffff;
+  border-radius: 500px;
+}
+
+.notification-wrapper .notification-content {
+  position: absolute;
+  top: 40px;
+  right: 5px;
+  width: 350px;
+  height: 200px;
+  background-color: whitesmoke;
+  z-index: 300;
+}
+
+.notification-wrapper .notification-header {
+  padding: 10px;
+  color: #ffffff;
+  background-color: royalblue;
+}
+
+.notification-wrapper .notification-header .label {
+  display: block;
+  width: 90%;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+.mat-toolbar-row, mat-toolbar {
+  display: flex;
+  justify-content: space-between; /* This spreads the items across the full width of the toolbar */
+  width: 100%; /* Ensures the toolbar spans the full width of its container */
+}
+
+.example-spacer {
+  margin-left: auto;
+  margin-right: auto;/* This spacer takes up any available space if used */
+
+}
+
+
+
+
+/* --------------------- */
+
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  display: flex;
+ 
+  justify-content: space-between;
+  align-items: center;
+  background-color: #762124;
+  position: sticky;
+  top: 0;
+}
+
+
+
+.logo > img {
+  width: auto;
+  height: 120px;
+  vertical-align: middle;
+}
+
+.navbar {
+  width: 70%;
+
+}
+
+.navbar > ul{
+  height: 120px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.navbar a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+}
+.navbar a:active{
+  background-color: rgb(172,172,231);
+}
+.nav > li:not(:first-child) > a:hover{
+  background-color: rgb(116, 149, 206);
+}
+
+
+.navbar > .nav > li > a {
+  display: block;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  
+}
+
+.navbar > .nav > li > a:hover {
+  background-color: rgb(29, 92, 92);
+  color: #762124;
+}
+
+.dropdown {
+  position: relative;
+  color: white;
+  font-size: 1.2rem;
+  padding: 5x 10px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  padding-top: 50px;
+  background-color: rgb(29, 92, 92);
+  
+  list-style-type: none;
+
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.dropdown-content > li {
+  width: 100%;
+  border-bottom: 1px solid #FFF;
+ 
+}
+
+.dropdown-content > li:last-of-type {
+  border-bottom: none;
+}
+
+.dropdown-content a {
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+  text-decoration: none;
+  color:#FFF;
+  font-size: 1.2rem;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(22, 152, 109);
+}
+.dropdown > a {
+  position: relative;
+  z-index: 1;
+}
+.dropdown:hover > ul{
+  display: flex;
+}
+
