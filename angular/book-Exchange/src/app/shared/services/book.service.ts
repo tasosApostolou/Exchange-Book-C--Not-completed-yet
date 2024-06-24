@@ -14,11 +14,12 @@ userService = inject(UserService)
 id = this.userService.id
 title:string=''
 // addBook(book:InsertBook | InsertStoreBook)
-addBook(book:InsertBook | InsertStoreBook){
+addBook(book:InsertBook){
   return this.http.post<{data:JSON}>(`https://localhost:7279/api/Person/AddBookToPerson/${this.userService.user().roleEntityId}/books`,book)
 }
-// https://localhost:7279/api/Person/AddBookToPerson/personId/books
-
+addStoreBook(storeBook:InsertStoreBook){
+  return this.http.post<{data:JSON}>(`https://localhost:7279/api/Store/AddBookToStore/${this.userService.user().roleEntityId}/books`,storeBook)
+}
 getBooksByTitle(title:string){
   this.title=title
   console.log(`title:${this.title}`)

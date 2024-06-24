@@ -36,7 +36,7 @@ onSubmit(value:any){
     book:book,
     price:this.form.get('price').value
   }
-  this.bookService.addBook(bookStore).subscribe({
+  this.bookService.addStoreBook(bookStore).subscribe({
     next: (response) => {
       console.log('book register', response);
       this.form.reset()

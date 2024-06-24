@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\services\\storeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\services\\storeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|C:\\Users\\User\\Desktop\\aaa\\FinalProject\\exchangebook\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|C:\\Users\\User\\Desktop\\aaa\\FinalProject\\exchangebook\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -102,12 +106,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "StoreService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\StoreService.cs",
+              "RelativeDocumentMoniker": "ExchangeBook\\Services\\StoreService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\StoreService.cs",
+              "RelativeToolTip": "ExchangeBook\\Services\\StoreService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T13:33:32.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "StoreController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\StoreController.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Controllers\\StoreController.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\StoreController.cs",
               "RelativeToolTip": "ExchangeBook\\Controllers\\StoreController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAAAC0AAAAAAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAACwAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-24T11:48:09.664Z",
               "EditorCaption": ""
@@ -127,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PersonController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\PersonController.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Controllers\\PersonController.cs",
@@ -135,12 +152,11 @@
               "RelativeToolTip": "ExchangeBook\\Controllers\\PersonController.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAACYAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T16:41:18.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T16:41:18.328Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "IBookRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\IBookRepository.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\IBookRepository.cs",
@@ -152,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "BookRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\BookRepository.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\BookRepository.cs",
@@ -164,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Program.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Program.cs",
@@ -176,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AuthorRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\AuthorRepository.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\AuthorRepository.cs",
@@ -188,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "NotificationType.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\models\\NotificationType.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\models\\NotificationType.cs",
@@ -200,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "UserRole.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\models\\UserRole.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\models\\UserRole.cs",
@@ -212,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\models\\ApplicationUser.cs",
@@ -224,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "UserStoreReadOnlyDTO.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\UserDTOs\\UserStoreReadOnlyDTO.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\DTO\\UserDTOs\\UserStoreReadOnlyDTO.cs",
@@ -236,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "UserPersonReadOnlyDTO.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\UserDTOs\\UserPersonReadOnlyDTO.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\DTO\\UserDTOs\\UserPersonReadOnlyDTO.cs",
@@ -248,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "JwtTokenDTO.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\UserDTOs\\JwtTokenDTO.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\DTO\\UserDTOs\\JwtTokenDTO.cs",
@@ -260,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "UserFiltersDTO.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\UserDTOs\\UserFiltersDTO.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\DTO\\UserDTOs\\UserFiltersDTO.cs",
@@ -272,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "UserDTO.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\UserDTOs\\UserDTO.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\DTO\\UserDTOs\\UserDTO.cs",
@@ -284,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ExchangeBook\\Properties\\launchSettings.json",
@@ -296,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "ExchangeBook.csproj",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\ExchangeBook.csproj",
               "RelativeDocumentMoniker": "ExchangeBook\\ExchangeBook.csproj",
@@ -308,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "BCryptUtil.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Security\\BCryptUtil.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Security\\BCryptUtil.cs",
@@ -320,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Microsoft.EntityFrameworkCore.props",
               "DocumentMoniker": "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.6\\buildTransitive\\net8.0\\Microsoft.EntityFrameworkCore.props",
               "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.6\\buildTransitive\\net8.0\\Microsoft.EntityFrameworkCore.props",
@@ -332,7 +348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": ".filenesting.json",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\.filenesting.json",
               "RelativeDocumentMoniker": ".filenesting.json",
