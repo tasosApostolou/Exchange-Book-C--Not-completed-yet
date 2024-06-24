@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import {FormControl,FormGroup,ReactiveFormsModule,Validators} from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { jwtDecode } from 'jwt-decode';
-import { Credentials, LoggedInJwt, LoggedInUser, User } from 'src/app/shared/interfaces/user';
+import { Credentials, LoggedInUser, User } from 'src/app/shared/interfaces/user';
 import { UserService } from 'src/app/shared/services/user.service';
 
 
@@ -37,8 +37,6 @@ export class UserLoginComponent {
         const access_token = response.token
         localStorage.setItem('access_token', access_token);
         const decodedTokenSubject = jwtDecode(access_token) as unknown as LoggedInUser;
-        let resp = response as unknown as LoggedInJwt
-        this.userService.id=resp.userId
         this.userService.user.set({
           userId: decodedTokenSubject.userId,
           sub: decodedTokenSubject.sub,

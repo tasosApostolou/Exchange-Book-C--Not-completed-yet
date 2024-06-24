@@ -20,9 +20,3 @@ export interface LoggedInUser{
 export interface JwtTokenDTO{
     token:string
 }
-export interface LoggedInJwt{
-    userId:number;
-    username:string; // username taken from jwt as sub
-    role :string;
-    Email:string;
-}
