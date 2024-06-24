@@ -1,4 +1,5 @@
-﻿namespace ExchangeBook.Data
+﻿
+namespace ExchangeBook.Data
 {
     public class Store
     {

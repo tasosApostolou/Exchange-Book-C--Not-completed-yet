@@ -45,6 +45,30 @@ namespace ExchangeBook.Services
                 throw;
             }
         }
+        public async Task<Book> CreateBookStoreAsync(BookInsertDTO? dto)
+        {
+            Book? book;
+            try
+            {
+
+                book = _mapper.Map<Book>(dto); // Configuration also AuthorInsertDTO (property of BookInsertDTO) convert to model Author
+                var existedAuthor = await _unitOfWork.AuthorRepository.GetAuthorByName(dto.Author.Name);
+                if (existedAuthor != null)
+                {
+                    book.Author = existedAuthor;
+                }
+                await _unitOfWork.BookRepository.AddAsync(book);
+                await _unitOfWork.SaveAsync();
+                return book;
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.StackTrace);
+                _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
+                throw;
+            }
+        }
         public async Task<Book?> GetBookById(int id)
         {
             Book? book;

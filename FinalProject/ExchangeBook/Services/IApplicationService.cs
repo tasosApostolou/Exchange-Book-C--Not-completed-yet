@@ -4,6 +4,7 @@
     {
         UserService UserService { get; }
         PersonService PersonService { get; }
+        StoreService StoreService { get; }
         BookService BookService { get; }
        
  

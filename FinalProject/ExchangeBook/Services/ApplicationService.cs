@@ -18,7 +18,9 @@ namespace ExchangeBook.Services
 
         public UserService UserService => new(_unitOfWork, _logger, _mapper);
         public PersonService PersonService => new(_unitOfWork, _logger, _mapper);
+        public StoreService StoreService => new(_unitOfWork, _logger, _mapper);
         public BookService BookService => new(_unitOfWork, _logger, _mapper);
+
 
 
         //public UserService UserService => throw new NotImplementedException();

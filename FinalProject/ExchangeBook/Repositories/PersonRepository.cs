@@ -38,22 +38,10 @@ namespace ExchangeBook.Repositories
                 .ToListAsync();
             return books;
         }
-        public async Task AddBookToPersonAsync(int personId, int bookId)
+        public async Task AddBookToPersonAsync(Person? person, Book? book)
         {
-            var person = await _context.Persons.Include(p => p.Books).FirstOrDefaultAsync(p => p.Id == personId);
-            if (person == null)
-            {
-                throw new Exception("Person not found.");
-            }
-
-            var book = await _context.Books.FirstOrDefaultAsync(b => b.Id == bookId);
-            if (book == null)
-            {
-                throw new Exception("Book not found.");
-            }
 
             person.Books.Add(book);
-            //await _context.SaveChangesAsync();
         }
 
         public async Task<bool> DeletePersonBookAsync(int? personId, int? bookId)

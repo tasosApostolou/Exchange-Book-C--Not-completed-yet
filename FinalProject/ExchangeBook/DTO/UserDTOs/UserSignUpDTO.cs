@@ -28,7 +28,6 @@ namespace ExchangeBook.DTO.UserDTOs
         [Phone(ErrorMessage = "Invalid phone number.")]
         public string? PhoneNumber { get; set; }
 
-        //////[JsonConverter(typeof(JsonStringEnumConverter))]
         [EnumDataType(typeof(UserRole), ErrorMessage = "Invalid user role.")]
         public UserRole? UserRole { get; set; }
 

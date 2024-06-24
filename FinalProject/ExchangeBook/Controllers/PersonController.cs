@@ -22,9 +22,19 @@ namespace ExchangeBook.Controllers
         [HttpPost("{personId}/books")]
         public async Task<IActionResult> AddBookToPerson(int personId,[FromBody] BookInsertDTO bookDto)
         {
-            if (bookDto == null)
+            if (!ModelState.IsValid)
             {
-                return NotFound();
+                // If the model state is not valid, build a custom response
+                var errors = ModelState
+                    .Where(e => e.Value!.Errors.Any())
+                    .Select(e => new
+                    {
+                        Field = e.Key,
+                        Errors = e.Value!.Errors.Select(error => error.ErrorMessage).ToArray()
+                    });
+
+                // instead of return BadRequest(new { Errors = errors });
+                throw new InvalidRegistrationException("ErrorsInRegistation: " + errors);
             }
             var book = await _applicationService.BookService.CreateBookAsync(bookDto);
 

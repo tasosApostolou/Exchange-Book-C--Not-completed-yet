@@ -17,6 +17,7 @@ namespace ExchangeBook.Repositories
         public BookRepository BookRepository => new(_context);
         public PersonRepository PersonRepository => new(_context);
         public StoreRepository StoreRepository => new (_context);
+        public StoreBookRepository StoreBookRepository => new(_context);
         public AuthorRepository AuthorRepository => new(_context);
         public UserRepositorty UserRepositorty => new(_context, _mapper);
 

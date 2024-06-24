@@ -33,7 +33,6 @@ namespace ExchangeBook.Services
             var signingCredentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
             
             int? roleEntityId = 0;
-            string? phoneNumber = "";
             if(userRole.Value == UserRole.PERSONAL)
             {
                 UserPersonReadOnlyDTO? userPerson = await GetUserPersonByUsername(username);

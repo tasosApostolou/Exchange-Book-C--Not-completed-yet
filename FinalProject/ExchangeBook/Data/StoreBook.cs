@@ -8,6 +8,6 @@
         public int? BookId { get; set; }
         public Book? Book { get; set; }
 
-        public decimal? Price { get; set; }
+        public double? Price { get; set; }
     }
 }

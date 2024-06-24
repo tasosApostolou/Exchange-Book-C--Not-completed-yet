@@ -35,7 +35,8 @@ namespace ExchangeBook.Services
                 {
                     throw new Exception("Book not found.");
                 }
-                person.Books.Add(book);
+                //person.Books.Add(book);
+                await _unitOfWork.PersonRepository.AddBookToPersonAsync(person,book);
                 await _unitOfWork.SaveAsync();
             }
             catch (Exception e)
