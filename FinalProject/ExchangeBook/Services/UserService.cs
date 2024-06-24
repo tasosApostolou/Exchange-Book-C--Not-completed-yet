@@ -57,7 +57,6 @@ namespace ExchangeBook.Services
                 new Claim("email", email!),
                 new Claim("role", userRole.Value.ToString()!),
                 new Claim("roleEntityId", roleEntityId.ToString())
-                //new Claim("roleEntityId", userPerson.personId.ToString())
 
 
             };

@@ -1,0 +1,14 @@
+[24-06-2024 13:32:46228 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager ] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[24-06-2024 13:32:46535 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "https://localhost:7279"
+[24-06-2024 13:32:46551 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "http://localhost:5065"
+[24-06-2024 13:32:46583 +03:00 Microsoft.Hosting.Lifetime ] Application started. Press Ctrl+C to shut down.
+[24-06-2024 13:32:46589 +03:00 Microsoft.Hosting.Lifetime ] Hosting environment: "Development"
+[24-06-2024 13:32:46605 +03:00 Microsoft.Hosting.Lifetime ] Content root path: "C:\Users\User\Desktop\aaa\FinalProject\ExchangeBook"
+[24-06-2024 13:32:47619 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/swagger/index.html""" - null null
+[24-06-2024 13:32:48155 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 540.5876ms
+[24-06-2024 13:32:48179 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/_framework/aspnetcore-browser-refresh.js""" - null null
+[24-06-2024 13:32:48192 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/_framework/aspnetcore-browser-refresh.js""" - 200 13760 "application/javascript; charset=utf-8" 12.4492ms
+[24-06-2024 13:32:48217 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/_vs/browserLink""" - null null
+[24-06-2024 13:32:48299 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 82.4268ms
+[24-06-2024 13:32:48406 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/swagger/v1/swagger.json""" - null null
+[24-06-2024 13:32:48573 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 167.1746ms
