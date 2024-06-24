@@ -26,12 +26,14 @@ export class StoreService {
     }
   
     getStoreBooks(){
-      return this.http.get<StoreBook[]>(`${API_URL}/${this.userService.user().roleEntityId}/books`,{
+      return this.http.get<StoreBook[]>(`https://localhost:7279/api/Store/GetStoreBooksByStoreId/store/${this.userService.user().roleEntityId}`,{
         headers: {
           Accept:'application/json'
         },
       })
     }
+
+    //https://localhost:7279/api/Store/GetStoreBooksByStoreId/store/2
 
     getStoreBooksByTitle(title:string){
       return this.http.get<StoreBook[]>(`${API_URL}/books?title=${title}`,{

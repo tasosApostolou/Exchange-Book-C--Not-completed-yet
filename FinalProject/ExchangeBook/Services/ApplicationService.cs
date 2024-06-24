@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using ExchangeBook.Data;
 using ExchangeBook.Repositories;
 
 namespace ExchangeBook.Services
@@ -20,6 +21,10 @@ namespace ExchangeBook.Services
         public PersonService PersonService => new(_unitOfWork, _logger, _mapper);
         public StoreService StoreService => new(_unitOfWork, _logger, _mapper);
         public BookService BookService => new(_unitOfWork, _logger, _mapper);
+        public StoreBookService StoreBookService => new(_unitOfWork, _logger, _mapper);
+        
+
+
 
 
 

@@ -18,6 +18,16 @@ namespace ExchangeBook.Repositories
             return storeBooks;
         }
 
+        public async Task<List<StoreBook>> GetStoreBooksByStoreIdAsync(int storeId)
+        {
+            var storeBooks = await _context.StoreBooks
+                .Include(sb => sb.Book)
+                .ThenInclude(b => b.Author)
+                .Where(sb => sb.StoreId == storeId)
+                .ToListAsync();
+
+            return storeBooks;
+        }
 
     }
 }

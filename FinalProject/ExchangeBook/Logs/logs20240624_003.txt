@@ -1,0 +1,13 @@
+[24-06-2024 22:46:02482 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+[24-06-2024 22:46:02562 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+[24-06-2024 22:46:02564 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+[24-06-2024 22:46:02565 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+[24-06-2024 22:46:02581 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+[24-06-2024 22:46:02599 +03:00 Microsoft.EntityFrameworkCore.Migrations ] No migrations were applied. The database is already up to date.

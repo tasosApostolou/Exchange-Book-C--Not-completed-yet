@@ -28,6 +28,16 @@ namespace ExchangeBook.Repositories
                .ToListAsync();
             return books;
         }
+        public async Task<List<Book>> GetBooksByTitleIncludeAuthor(string? title)
+        {
+            List<Book> books;
+            books = await _context.Books
+               .Where(b => b.Title.StartsWith(title, StringComparison.OrdinalIgnoreCase))
+               .Include(b => b.Author)
+               .ToListAsync();
+            return books;
+        }
+
 
         public async Task<Book> GetBookWithAuthorByIdAsync(int bookId)
         {

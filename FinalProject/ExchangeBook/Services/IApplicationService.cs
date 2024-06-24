@@ -1,4 +1,6 @@
-﻿namespace ExchangeBook.Services
+﻿using ExchangeBook.Data;
+
+namespace ExchangeBook.Services
 {
     public interface IApplicationService
     {
@@ -6,7 +8,8 @@
         PersonService PersonService { get; }
         StoreService StoreService { get; }
         BookService BookService { get; }
-       
- 
+        StoreBookService StoreBookService { get; }
+
+
     }
 }

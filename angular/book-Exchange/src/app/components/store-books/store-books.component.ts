@@ -22,6 +22,9 @@ export class StoreBooksComponent {
     this.loadBooks()
   }
   loadBooks(){
+    console.log(`daeefsafsfsf `)
+
+    console.log(`daeefsafsfsf ${this.userService.user().roleEntityId}`)
     this.storeService.getStoreBooks().subscribe((data:StoreBook[]) => {
       this.storeBooks = data
       data.forEach(storeBook => this.books.push(storeBook.book))

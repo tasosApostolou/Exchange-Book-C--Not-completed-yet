@@ -4,6 +4,7 @@ using ExchangeBook.DTO.BookDTOs;
 using ExchangeBook.Services;
 using ExchangeBook.Services.Exceptions;
 using Microsoft.AspNetCore.Mvc;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace ExchangeBook.Controllers
 {
@@ -44,6 +45,21 @@ namespace ExchangeBook.Controllers
             await _applicationService.StoreService.AddBookToStoreAsync(storeId, storeBookInsertDTO.Price, book);
             return Ok(_mapper.Map<BookReadOnlyDTO>(book));
 
+        }
+
+        [HttpGet("store/{storeId}")]
+        public async Task<IActionResult> GetStoreBooksByStoreId(int storeId)
+        {
+            var storeBooks = await _applicationService.StoreBookService.GetStoreBooksByStoreIdAsync(storeId);
+            //var storeBooks = await _applicationService.StoreService.GetStoreBooksByStoreIdAsync(storeId);
+
+            if (storeBooks == null || storeBooks.Count == 0)
+            {
+                return NotFound();
+            }
+            return Ok(_mapper.Map<List<StoreBookReadOnlyDTO>>(storeBooks));
+
+            //return Ok(storeBooks);
         }
     }
 }

@@ -27,10 +27,15 @@ namespace ExchangeBook.Services
                 Book = book,
                 Price = price
             };
-
+            //
             await _unitOfWork.StoreBookRepository.AddAsync(storeBook);
             await _unitOfWork.SaveAsync();
         }
 
+        public async Task<List<StoreBook>> GetStoreBooksByStoreIdAsync(int storeId)
+        {
+            Store store = await _unitOfWork.StoreRepository.GetStoreIncludeBooksAsync(storeId);
+            return await _unitOfWork.StoreBookRepository.GetStoreBooksByStoreIdAsync(storeId);
+        }
     }
 }

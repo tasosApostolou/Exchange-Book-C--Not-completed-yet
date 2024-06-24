@@ -55,3 +55,16 @@ WHERE [s].[Id] = @__p_0"
 [24-06-2024 16:01:04568 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.StoreController.AddBookToStore (ExchangeBook)" in 1736.4364ms
 [24-06-2024 16:01:04572 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.StoreController.AddBookToStore (ExchangeBook)"'
 [24-06-2024 16:01:04580 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "POST" "https"://"localhost:7279""""/api/Store/AddBookToStore/2/books""" - 200 61 "application/json; charset=utf-8" 1810.2062ms
+[24-06-2024 22:04:34676 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+[24-06-2024 22:04:34750 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+[24-06-2024 22:04:34753 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+[24-06-2024 22:04:34753 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+[24-06-2024 22:04:34773 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+[24-06-2024 22:04:34787 +03:00 Microsoft.EntityFrameworkCore.Migrations ] No migrations were applied. The database is already up to date.
