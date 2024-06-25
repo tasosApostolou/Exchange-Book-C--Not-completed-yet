@@ -23,12 +23,13 @@ addStoreBook(storeBook:InsertStoreBook){
 getBooksByTitle(title:string){
   this.title=title
   console.log(`title:${this.title}`)
-  return this.http.get<BookWithPersons[]>(`${API_URL}/books/${this.title}`,{
+  return this.http.get<BookWithPersons[]>(`https://localhost:7279/api/Book/GetBooksByTitle/${this.title}/books`,{
     headers:{
       Accept:'application/json'
     }
   })
     }
+    // https://localhost:7279/api/Book/GetBooksByTitle/{title}/books
 
   getUserBooks(personId:number){
     return this.http.get <Book[]>(`${API_URL}/person/${personId}`,{

@@ -24,7 +24,10 @@ namespace ExchangeBook.Repositories
         {
             List<Book> books;
             books = await _context.Books
-               .Where(b => b.Title.StartsWith(title, StringComparison.OrdinalIgnoreCase))
+               //.Where(b => b.Title.StartsWith(title, StringComparison.OrdinalIgnoreCase))
+               .Where(b => b.Title.StartsWith(title))
+               .Include(b => b.Persons)
+               .Include(b => b.Author)
                .ToListAsync();
             return books;
         }

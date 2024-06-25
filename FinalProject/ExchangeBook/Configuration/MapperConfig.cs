@@ -2,6 +2,7 @@
 using ExchangeBook.Data;
 using ExchangeBook.DTO.AuthorDTOs;
 using ExchangeBook.DTO.BookDTOs;
+using ExchangeBook.DTO.PersonDTO;
 using ExchangeBook.DTO.UserDTOs;
 
 namespace ExchangeBook.Configuration
@@ -28,6 +29,7 @@ namespace ExchangeBook.Configuration
             //CreateMap<AuthorReadOnlyDTo, AuthorInsertDTO>().ReverseMap();
             CreateMap<AuthorInsertDTO, Author>().ReverseMap();
             CreateMap<BookInsertDTO, Book>()
+
                 .ForMember(dest => dest.Author, opt => opt.MapFrom(src => src.Author))
                 .ReverseMap();
             //CreateMap<Book, BookReadOnlyDTO>()
@@ -35,36 +37,34 @@ namespace ExchangeBook.Configuration
             //    .ReverseMap();
 
             CreateMap<Author, AuthorReadonlyDTO>().ReverseMap();
+
             CreateMap<Book, BookReadOnlyDTO>()
                 .ForMember(dest => dest.Author, opt => opt.MapFrom(src => src.Author))
                 .ReverseMap();
+
             CreateMap<StoreBookInsertDTO, StoreBook>()
-     .ForMember(dest => dest.Book, opt => opt.MapFrom(src => src.Book));
+                .ForMember(dest => dest.Book, opt => opt.MapFrom(src => src.Book));
+
             //CreateMap<StoreBook, StoreBookReadOnlyDTO>().ReverseMap();
             CreateMap<StoreBook, StoreBookReadOnlyDTO>()
-          .ForMember(dest => dest.Book, opt => opt.MapFrom(src => src.Book))
-          .ReverseMap();
-           
+              .ForMember(dest => dest.Book, opt => opt.MapFrom(src => src.Book))
+              .ReverseMap();
+
+            CreateMap<Book, BookReadDTOIncludePersons>()
+                .ForMember(dest => dest.Persons, opt => opt.MapFrom(src => src.Persons))
+                .ForMember(dest => dest.Author, opt => opt.MapFrom(src => src.Author)).ReverseMap();
+            //CreateMap<Person, PersonReadOnlyDTO>() 
+            //    .ForMember(dest => dest.)
 
 
 
+            CreateMap<Person, PersonReadOnlyDTO>()
+      .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
+      .ForMember(dest => dest.Firstname, opt => opt.MapFrom(src => src.Firstname))
+      .ForMember(dest => dest.Lastname, opt => opt.MapFrom(src => src.Lastname))
+      .ForMember(dest => dest.PhoneNumber, opt => opt.MapFrom(src => src.PhoneNumber))
+      .ReverseMap();
 
-            //CreateMap<BookReadOnlyDTO, Book>()
-            //                .ForMember(dest => dest.Author, opt => opt.MapFrom(src => src.Author))
-            //                .ReverseMap();
-
-
-            //CreateMap<Author, AuthorInsertDTO>().ReverseMap();
-            //CreateMap<AuthorInsertDTO, Author>().ReverseMap();
-            //CreateMap<BookInsertDTO, Book>()
-            //    .ForMember(dest => dest.Author, opt => opt.MapFrom(src => src.Author))
-            //    .ReverseMap();
-            //CreateMap<Book, BookReadOnlyDTO>()
-            //    .ForMember(dest => dest.Author, opt => opt.MapFrom(src => src.Author))
-            //    .ReverseMap();
-            //CreateMap<Author, AuthorReadonlyDTO>().ReverseMap();
-
-            ////CreateMap<ExchangeBook.Data.AuthorReadOnlyDTo, AuthorR>().ReverseMap();
         }
     }
 }

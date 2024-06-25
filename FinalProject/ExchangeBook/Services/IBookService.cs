@@ -7,7 +7,7 @@ namespace ExchangeBook.Services
     {
         Task<Book?> CreateBookAsync( BookInsertDTO dto);
         Task<Book?> GetBookWithAuthorById(int id);
-
+        Task<List<Book>> GetBooksByTitleAsync(string? title);
 
     }
 }

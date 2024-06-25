@@ -101,5 +101,20 @@ namespace ExchangeBook.Services
             }
             return book;
         }
+        public async Task<List<Book>> GetBooksByTitleAsync(string? title)
+        {
+            List<Book> books = new();
+
+            try
+            {
+                books = await _unitOfWork!.BookRepository.GetBooksByTitle(title);
+                _logger!.LogInformation("{Message}", "Student count retrieved with success");
+            }
+            catch (Exception e)
+            {
+                _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
+            }
+            return books;
+        }
     }
 }
