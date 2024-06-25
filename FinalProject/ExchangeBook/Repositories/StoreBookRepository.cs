@@ -9,11 +9,15 @@ namespace ExchangeBook.Repositories
         {
         }
 
-        public async Task<List<StoreBook>> GetByBookTitle(string? title)
+        public async Task<List<StoreBook>> GetByBookTitleAsync(string? title)
         {
             List<StoreBook> storeBooks;
             storeBooks = await _context.StoreBooks
-                .Where(sb => sb.Book.Title.StartsWith(title, StringComparison.OrdinalIgnoreCase))
+                .Where(sb => sb.Book.Title.StartsWith(title))
+                .Include(sb => sb.Store)
+                .Include(sb => sb.Book)
+                .ThenInclude(b => b.Author)
+                //.Where(sb => sb.Book.Title.StartsWith(title))
                 .ToListAsync();
             return storeBooks;
         }

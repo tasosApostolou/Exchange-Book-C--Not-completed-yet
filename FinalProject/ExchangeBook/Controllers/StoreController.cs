@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using ExchangeBoodk.Services;
 using ExchangeBook.Data;
 using ExchangeBook.DTO.BookDTOs;
 using ExchangeBook.Services;
@@ -17,8 +18,8 @@ namespace ExchangeBook.Controllers
         {
             _mapper = mapper;
         }
-        [HttpPost("{storeId}/books")]
-        public async Task<IActionResult> AddBookToStore(int storeId, [FromBody] StoreBookInsertDTO storeBookInsertDTO)
+        [HttpPost("{storeId}")]
+        public async Task<ActionResult<BookReadOnlyDTO>> AddBookToStore(int storeId, [FromBody] StoreBookInsertDTO storeBookInsertDTO)
         {
             //if (!ModelState.IsValid)
             //{
@@ -48,7 +49,7 @@ namespace ExchangeBook.Controllers
         }
 
         [HttpGet("store/{storeId}")]
-        public async Task<IActionResult> GetStoreBooksByStoreId(int storeId)
+        public async Task<ActionResult<List<StoreBookReadOnlyDTO>>> GetStoreBooksByStoreId(int storeId)
         {
             var storeBooks = await _applicationService.StoreBookService.GetStoreBooksByStoreIdAsync(storeId);
             //var storeBooks = await _applicationService.StoreService.GetStoreBooksByStoreIdAsync(storeId);
@@ -60,6 +61,17 @@ namespace ExchangeBook.Controllers
             return Ok(_mapper.Map<List<StoreBookReadOnlyDTO>>(storeBooks));
 
             //return Ok(storeBooks);
+        }
+
+        [HttpGet("title/{initials}")]
+        public async Task<ActionResult<List<StoreBookReadOnlyDTO>>> GetStoreBooksByBookTitle(string initials)
+        {
+            var storeBooks = await _applicationService.StoreBookService.GetStoreBooksByBookTitleAsync(initials);
+            if (storeBooks == null || storeBooks.Count == 0)
+            {
+                return NotFound();
+            }
+            return _mapper.Map<List<StoreBookReadOnlyDTO>>(storeBooks);
         }
     }
 }

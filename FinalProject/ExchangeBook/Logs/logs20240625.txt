@@ -228,3 +228,17 @@ ORDER BY [b].[Id], [a].[Id], [t].[BooksId], [t].[PersonsId]"
 [25-06-2024 14:50:47197 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "ExchangeBook.Controllers.BookController.GetBooksByTitle (ExchangeBook)" in 1719.0698ms
 [25-06-2024 14:50:47201 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"ExchangeBook.Controllers.BookController.GetBooksByTitle (ExchangeBook)"'
 [25-06-2024 14:50:47209 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/api/Book/GetBooksByTitle/j/books""" - 200 1023 "application/json; charset=utf-8" 1788.2449ms
+[25-06-2024 18:32:32680 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager ] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[25-06-2024 18:33:08158 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "https://localhost:7279"
+[25-06-2024 18:33:08160 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "http://localhost:5065"
+[25-06-2024 18:33:08163 +03:00 Microsoft.Hosting.Lifetime ] Application started. Press Ctrl+C to shut down.
+[25-06-2024 18:33:08165 +03:00 Microsoft.Hosting.Lifetime ] Hosting environment: "Development"
+[25-06-2024 18:33:08166 +03:00 Microsoft.Hosting.Lifetime ] Content root path: "C:\Users\User\Desktop\aaa\FinalProject\ExchangeBook"
+[25-06-2024 18:33:08704 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/swagger/index.html""" - null null
+[25-06-2024 18:33:08991 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 291.3584ms
+[25-06-2024 18:33:09000 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/_framework/aspnetcore-browser-refresh.js""" - null null
+[25-06-2024 18:33:09009 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/_vs/browserLink""" - null null
+[25-06-2024 18:33:09030 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/_framework/aspnetcore-browser-refresh.js""" - 200 13760 "application/javascript; charset=utf-8" 29.4487ms
+[25-06-2024 18:33:09087 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 78.069ms
+[25-06-2024 18:33:09135 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/swagger/v1/swagger.json""" - null null
+[25-06-2024 18:33:09340 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 204.5989ms
