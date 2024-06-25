@@ -6,5 +6,6 @@ namespace ExchangeBook.Repositories
     {
         Task<List<StoreBook>> GetByBookTitleAsync(string? title);
         Task<List<StoreBook>> GetStoreBooksByStoreIdAsync(int storeId);
+        Task<bool> RemoveBookFromStoreAsync(int storeId, int bookId);
     }
 }

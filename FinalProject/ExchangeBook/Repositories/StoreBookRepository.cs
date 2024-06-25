@@ -33,5 +33,17 @@ namespace ExchangeBook.Repositories
             return storeBooks;
         }
 
+        public async Task<bool> RemoveBookFromStoreAsync(int storeId, int bookId)
+        {
+            var storeBook = await _context.StoreBooks
+                .FirstOrDefaultAsync(sb => sb.StoreId == storeId && sb.BookId == bookId);
+
+            if (storeBook != null)
+            {
+                 _context.StoreBooks.Remove(storeBook);
+                return true;
+            }
+            return false;
+        }
     }
 }

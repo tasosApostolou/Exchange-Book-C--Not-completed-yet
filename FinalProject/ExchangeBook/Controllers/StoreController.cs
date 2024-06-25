@@ -73,5 +73,12 @@ namespace ExchangeBook.Controllers
             }
             return _mapper.Map<List<StoreBookReadOnlyDTO>>(storeBooks);
         }
+
+        [HttpDelete("{storeId}/books/{bookId}")]
+        public async Task<ActionResult<string>> RemoveBookFromStore(int storeId, int bookId)
+        {
+            await _applicationService.StoreBookService.RemoveBookFromStoreAsync(storeId, bookId);
+            return "Deleted";
+        }
     }
 }

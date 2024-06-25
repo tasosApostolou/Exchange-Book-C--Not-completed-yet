@@ -44,5 +44,39 @@ namespace ExchangeBook.Services
             }
         }
 
+        public async Task RemoveBookFromStoreAsync(int storeId, int bookId)
+        {
+            bool deleted;
+            try
+            {
+                deleted = await _unitOfWork.StoreBookRepository.RemoveBookFromStoreAsync(storeId,bookId);
+                if (!deleted)
+                {
+                    throw new BookNotFoundException("Book Not Found");
+                }
+                await _unitOfWork.SaveAsync();
+              
+            }
+            catch (BookNotFoundException e)
+            {
+                _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
+                throw;
+            }
+
+            //bool deleted;
+            //try
+            //{
+            //    deleted = await _unitOfWork!.UserRepository.DeleteAsync(id);
+            //    if (!deleted)
+            //    {
+            //        throw new UserNotFoundException("UserNotFound");
+            //    }
+            //}
+            //catch (Exception e)
+            //{
+            //    _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
+            //    throw;
+            //}
+        }
     }
 }

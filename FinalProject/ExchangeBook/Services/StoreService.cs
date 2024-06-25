@@ -2,6 +2,7 @@
 using ExchangeBook.Data;
 using ExchangeBook.DTO.BookDTOs;
 using ExchangeBook.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace ExchangeBook.Services
 {

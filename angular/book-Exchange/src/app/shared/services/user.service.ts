@@ -54,11 +54,11 @@ this.router.navigate(['login']);
   
   }
 
-  deleteBookFromLoggedInUser(bookId:number){
-    return this.http.delete<{any:User}>(`${environment.apiURL}/${this.user().role.toLowerCase()}/${this.user().roleEntityId}/books/${bookId}`)
-  
+  deleteBookFromLoggedInStoreUser(bookId:number){
+    return this.http.delete<{any:User}>(`https://localhost:7279/api/Store/RemoveBookFromStore/${this.user().roleEntityId}/books/${bookId}`)
+  //https://localhost:7279/api/Store/RemoveBookFromStore/{storeId}/books/{bookId}
+
   }
-  // https://localhost:7279/api/Person/DeletesPersonBook/personal/8/book/6
   getUserNotifications(){//getNotificationsByUserID
   return this.http.get<Notification[]>(`${API_USER}/notification/${this.id}`)
 }

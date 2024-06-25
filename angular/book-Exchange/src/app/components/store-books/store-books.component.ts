@@ -32,7 +32,7 @@ export class StoreBooksComponent {
   }
 
   deleteBook(bookId:number){
-    this.userService.deleteBookFromLoggedInUser(bookId).subscribe({
+    this.userService.deleteBookFromLoggedInStoreUser(bookId).subscribe({
       next:(response)=> {
         console.log("book deleted",response)
         if(this.books.length===1){
