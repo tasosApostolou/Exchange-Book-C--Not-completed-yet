@@ -52,7 +52,7 @@ namespace ExchangeBook.Services
                 new Claim(ClaimTypes.Role, userRole.ToString()!),
 
                 new Claim("name", username!),
-                new Claim("id", userId.ToString()),
+                new Claim("userId", userId.ToString()),
                 new Claim("email", email!),
                 new Claim("role", userRole.Value.ToString()!),
                 new Claim("roleEntityId", roleEntityId.ToString())

@@ -67,6 +67,30 @@ namespace ExchangeBook.Repositories
                 .FirstOrDefaultAsync();
             return personWithBooks;
         }
+
+        public async Task<Person?> UpdatePersonAsync(int personId, Person person)
+        {
+            var existingPerson = _context.Persons.FirstOrDefault(p => p.Id == personId);
+            if (existingPerson.Id != personId && personId != person.Id)
+            {
+                return null;
+
+            }
+            if (existingPerson != null)
+            {
+                //Μου εβγαζε ενα error οτι δεν μπορει να γινει attach με new instance, να θυμηθω να το αλλαξω!
+                _context.Entry(existingPerson).State = EntityState.Detached;
+            }
+
+
+            // Attach the new entity instance and set its state to Modified
+            _context.Persons.Attach(person);
+            _context.Entry(person).State = EntityState.Modified;
+
+            await _context.SaveChangesAsync();
+
+            return person;
+        }
     }
 }
 

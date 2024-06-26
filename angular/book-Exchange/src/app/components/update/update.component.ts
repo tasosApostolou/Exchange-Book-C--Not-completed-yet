@@ -17,6 +17,7 @@ export class UpdateComponent {
   form = new FormGroup({
     firstname: new FormControl('',Validators.required),
     lastname: new FormControl('',Validators.required),
+    phoneNumber: new FormControl('',Validators.required)
   });
   clicked = false
   updatedFirstname = ''
@@ -27,6 +28,7 @@ export class UpdateComponent {
     const person = this.form.value as Person
     person.id = this.userService.user().roleEntityId
     person.userId =  this.userService.user().userId
+    console.log("dasdada" +  this.userService.user().userId)
   console.log(person)
     this.personalService.updatePersonal(person).subscribe({
       next: (response) => {

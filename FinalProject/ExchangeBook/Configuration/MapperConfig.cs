@@ -30,12 +30,13 @@ namespace ExchangeBook.Configuration
             //CreateMap<AuthorReadOnlyDTo, AuthorInsertDTO>().ReverseMap();
             CreateMap<AuthorInsertDTO, Author>().ReverseMap();
             CreateMap<BookInsertDTO, Book>()
-
                 .ForMember(dest => dest.Author, opt => opt.MapFrom(src => src.Author))
                 .ReverseMap();
             //CreateMap<Book, BookReadOnlyDTO>()
             //    .ForMember(dest => dest.Author, opt => opt.MapFrom(src => src.Author))
             //    .ReverseMap();
+
+            CreateMap<PersonDTO, Person>().ReverseMap();
 
             CreateMap<Author, AuthorReadonlyDTO>().ReverseMap();
 

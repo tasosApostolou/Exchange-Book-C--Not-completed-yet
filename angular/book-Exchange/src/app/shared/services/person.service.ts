@@ -43,7 +43,7 @@ personSignal = signal<Person | null>(null);
    return this.http.delete<{any:Book}>(`${API_URL}/${this.userService.user().roleEntityId}/books/${bookId}`)
   }
   updatePersonal(person:Person){
-    return this.http.put<{any:Person}>(`${API_URL}/update/${
+    return this.http.put<{any:Person}>(`https://localhost:7279/api/Person/UpdateUserAccount/${
       person.id}`,person)
   }
   getPersonById(personID:number){

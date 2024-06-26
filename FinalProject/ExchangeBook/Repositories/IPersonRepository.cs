@@ -10,6 +10,7 @@ namespace ExchangeBook.Repositories
         Task AddBookToPersonAsync(Person? person, Book? book);
         Task<bool> DeletePersonBookAsync(int? personId, int? bookId);//Delete book from person, delete rec from Person_book (many-many)
         Task<Person> GetPersonWithBooksAsync(int? id);
+        Task<Person?> UpdatePersonAsync(int personId, Person person);
 
 
     }

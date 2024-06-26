@@ -4,7 +4,9 @@ export interface Person {
   id:number
   firstname: string;
   lastname: string;
+  phoneNumber: string;
   userId:number;
+
 
 }
 export interface UserSignUpDTO{

@@ -2,8 +2,11 @@
 using ExchangeBook.Data;
 using ExchangeBook.DTO.AuthorDTOs;
 using ExchangeBook.DTO.BookDTOs;
+using ExchangeBook.DTO.PersonDTO;
+using ExchangeBook.DTO.UserDTOs;
 using ExchangeBook.Services;
 using ExchangeBook.Services.Exceptions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
@@ -87,6 +90,17 @@ namespace ExchangeBook.Controllers
                 throw new ServerGenericException("book not found or not deleted or server erro");
             }
                 return Ok("Deleted");
+        }
+
+        [HttpPut("{personId}")]
+        //[Authorize(Roles = "Personal")]
+        public async Task<ActionResult<PersonReadOnlyDTO>> UpdateUserAccount(int personId, PersonDTO? personDTO)
+        {
+           
+
+            var person = await _applicationService.PersonService.UpdatePersonAsync(personId, personDTO!);
+            var returnedPersonDTO = _mapper.Map<PersonReadOnlyDTO>(person);
+            return Ok(returnedPersonDTO);
         }
     }
 }

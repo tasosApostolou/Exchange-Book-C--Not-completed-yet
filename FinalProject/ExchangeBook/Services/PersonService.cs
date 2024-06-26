@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using ExchangeBook.Data;
 using ExchangeBook.DTO.BookDTOs;
+using ExchangeBook.DTO.PersonDTO;
+using ExchangeBook.DTO.UserDTOs;
 using ExchangeBook.Repositories;
 using ExchangeBook.Services.Exceptions;
 
@@ -26,17 +28,17 @@ namespace ExchangeBook.Services
             try
             {
                 person = await _unitOfWork.PersonRepository.GetAsync(personId);
-                if(person == null)
+                if (person == null)
                 {
                     throw new Exception();
                 }
-                book  = await _unitOfWork.BookRepository.GetAsync(bookId);
+                book = await _unitOfWork.BookRepository.GetAsync(bookId);
                 if (book == null)
                 {
                     throw new Exception("Book not found.");
                 }
                 //person.Books.Add(book);
-                await _unitOfWork.PersonRepository.AddBookToPersonAsync(person,book);
+                await _unitOfWork.PersonRepository.AddBookToPersonAsync(person, book);
                 await _unitOfWork.SaveAsync();
             }
             catch (Exception e)
@@ -70,15 +72,40 @@ namespace ExchangeBook.Services
 
             try
             {
-                if ( await _unitOfWork.PersonRepository.GetAsync(personId) == null) throw new PersonNotFoundException("Person not found");
+                if (await _unitOfWork.PersonRepository.GetAsync(personId) == null) throw new PersonNotFoundException("Person not found");
                 if (await _unitOfWork.BookRepository.GetAsync(bookId) == null) throw new BookNotFoundException("Book Not Found");
                 deleted = await _unitOfWork.PersonRepository.DeletePersonBookAsync(personId, bookId);
-                
-            }catch(Exception e)
+
+            }
+            catch (Exception e)
             {
                 _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
             }
             return deleted;
+        }
+
+        public async Task<Person?> UpdatePersonAsync(int personId, PersonDTO personDTO)
+        {
+            Person? existingPerson;
+            Person? person;
+            var personUser = await _unitOfWork.UserRepositorty.GetAsync(personDTO.UserId);
+            if (personUser == null) return null;
+            try
+            {
+                var personToUpdate = _mapper!.Map<Person>(personDTO);
+
+                person = await _unitOfWork.PersonRepository.UpdatePersonAsync(personId, personToUpdate);
+                if (person is null) return null;
+                person.User = personUser;
+                await _unitOfWork.SaveAsync();
+                _logger!.LogInformation("{Message}", "User updated successfully");
+            }
+            catch (Exception e)
+            {
+                _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
+                throw;
+            }
+            return person;
         }
     }
 }
