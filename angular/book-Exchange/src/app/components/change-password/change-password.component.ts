@@ -56,7 +56,8 @@ export class ChangePasswordComponent {
   }
   changePassword(oldPassword:string){
     //check authendication before password changing using credentials
-    this.userService.loginUser({Username:this.userSignal().sub, Password:oldPassword}).subscribe({
+    console.log(this.userService.user().name)
+    this.userService.loginUser({Username:this.userService.user().name, Password:oldPassword}).subscribe({
       next: (response) =>{
         console.log(response.token)
         if (this.passwordConfirmsValidator(this.form)){
@@ -76,9 +77,10 @@ export class ChangePasswordComponent {
   updatePassword(password:string):void{
     const user:User = {
     id:this.userSignal().userId,
-    username:this.userSignal().sub,// sub is username taken from token
+    username:this.userSignal().name,// sub is username taken from token
+    email:this.userSignal().email,
     password:password,
-    role:this.userSignal().role
+    userRole:this.userSignal().role
   }
     this.userService.updateUser(user).subscribe({
       next:(response) => {

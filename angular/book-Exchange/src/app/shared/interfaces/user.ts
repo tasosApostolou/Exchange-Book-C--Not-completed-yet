@@ -1,8 +1,9 @@
 export interface User{
     id:number
-    username:string;
+    username:string
+    email:string;
     password:string;
-    role:string
+    userRole:string
 }
 
 export interface Credentials{
@@ -11,7 +12,8 @@ export interface Credentials{
 }
 export interface LoggedInUser{
     userId:number;
-    sub:string; // username taken from jwt as sub
+    name:string; // username taken from jwt as sub
+    email:string
     role :string;
     roleEntityId:number //PERSONAL or STORE logged in user
 

@@ -1,0 +1,15 @@
+[30-06-2024 11:47:20325 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager ] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[30-06-2024 11:47:20650 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "https://localhost:7279"
+[30-06-2024 11:47:20653 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "http://localhost:5065"
+[30-06-2024 11:47:20658 +03:00 Microsoft.Hosting.Lifetime ] Application started. Press Ctrl+C to shut down.
+[30-06-2024 11:47:20660 +03:00 Microsoft.Hosting.Lifetime ] Hosting environment: "Development"
+[30-06-2024 11:47:20663 +03:00 Microsoft.Hosting.Lifetime ] Content root path: "C:\Users\User\Desktop\aaa\FinalProject\ExchangeBook"
+[30-06-2024 11:47:21871 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/swagger/index.html""" - null null
+[30-06-2024 11:47:22404 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 537.9097ms
+[30-06-2024 11:47:22417 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/_framework/aspnetcore-browser-refresh.js""" - null null
+[30-06-2024 11:47:22419 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/_vs/browserLink""" - null null
+[30-06-2024 11:47:22467 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/_framework/aspnetcore-browser-refresh.js""" - 200 13760 "application/javascript; charset=utf-8" 49.054ms
+[30-06-2024 11:47:22601 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 181.9665ms
+[30-06-2024 11:47:22903 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting "HTTP/2" "GET" "https"://"localhost:7279""""/swagger/v1/swagger.json""" - null null
+[30-06-2024 11:47:23133 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished "HTTP/2" "GET" "https"://"localhost:7279""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 230.8891ms
+[30-06-2024 11:54:02269 +03:00 Microsoft.Hosting.Lifetime ] Application is shutting down...

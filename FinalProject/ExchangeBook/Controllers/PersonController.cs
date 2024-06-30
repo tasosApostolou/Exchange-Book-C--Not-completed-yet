@@ -36,7 +36,6 @@ namespace ExchangeBook.Controllers
                         Errors = e.Value!.Errors.Select(error => error.ErrorMessage).ToArray()
                     });
 
-                // instead of return BadRequest(new { Errors = errors });
                 throw new InvalidRegistrationException("ErrorsInRegistation: " + errors);
             }
             var book = await _applicationService.BookService.CreateBookAsync(bookDto);
@@ -61,10 +60,6 @@ namespace ExchangeBook.Controllers
             BookReadOnlyDTO returnedBook = _mapper.Map<BookReadOnlyDTO>(book);
             //AuthorReadonlyDTO authorReadonly= _mapper.Map<AuthorReadonlyDTO>(book.Author);
            
-
-            //returnedBook.Author= authorReadonly;
-            //returnedBook.Author = _mapper.Map<AuthorReadonlyDTO>(book.Author);
-            //Console.WriteLine("malakies " + authorReadonly.Name);
             return Ok(returnedBook);
         }
 
@@ -101,6 +96,15 @@ namespace ExchangeBook.Controllers
             var person = await _applicationService.PersonService.UpdatePersonAsync(personId, personDTO!);
             var returnedPersonDTO = _mapper.Map<PersonReadOnlyDTO>(person);
             return Ok(returnedPersonDTO);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<String>> DeletePerson(int id)
+        {
+            
+            await _applicationService.PersonService.DeletePersonAsync(id);
+
+            return "Deleted";
         }
     }
 }

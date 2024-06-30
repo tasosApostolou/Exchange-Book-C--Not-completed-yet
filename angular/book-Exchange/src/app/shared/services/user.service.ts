@@ -40,14 +40,14 @@ localStorage.removeItem('access_token');
 this.router.navigate(['login']);
   }
   // api/{role}/roleEntityId/books
-  getUserBooks(){
-    return this.http.get<Book[] | StoreBook[]>(`${environment.apiURL}/${this.user().role.toLowerCase()}/${this.user().roleEntityId}/books`,{
-      headers: {
-        Accept:'application/json'
-      },
-    })
+  // getUserBooks(){
+  //   return this.http.get<Book[] | StoreBook[]>(`${environment.apiURL}/${this.user().role.toLowerCase()}/${this.user().roleEntityId}/books`,{
+  //     headers: {
+  //       Accept:'application/json'
+  //     },
+  //   })
   
-  }
+  // }
   deleteBookFromLoggedInPersonUser(bookId:number): Observable<any>{
     return this.http.delete<string>(`https://localhost:7279/api/Person/DeletesPersonBook/personal/${this.user().roleEntityId}/book/${bookId}
 `)
@@ -64,7 +64,7 @@ this.router.navigate(['login']);
 }
 
   updateUser(user:User){
-    return this.http.put<{user:User}>(`${API_USER}/update/${this.user().userId}`,user)
+    return this.http.put<{user:User}>(`${API_USER}/UpdateUserAccount?id=${this.user().userId}`,user)
   }
 
   deleteUser(){

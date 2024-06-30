@@ -5,6 +5,7 @@ using ExchangeBook.DTO.UserDTOs;
 using ExchangeBook.models;
 using ExchangeBook.Security;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace ExchangeBook.Repositories
 {
@@ -54,15 +55,27 @@ namespace ExchangeBook.Repositories
 
             return userStore!;
         }
-            public async Task<User?> UpdateUserAsync(int userId, User user)
+            public async Task<User?> UpdateUserAsync(int userId, User? user)
         {
-            var existingUser = await _context.Users.Where(x => x.Id == userId)
-                .FirstOrDefaultAsync();
-            if(existingUser is null) return null;
-            if(existingUser.Id != userId) return null;
+            var existingUser= await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
+            if (user.Id != userId && userId != user.Id)
+            {
+                return null;
+
+            }
+            if (existingUser != null)
+            {
+                //Μου εβγαζε ενα error οτι δεν μπορει να γινει attach με new instance, να θυμηθω να το αλλαξω!
+                _context.Entry(existingUser).State = EntityState.Detached;
+            }
+            // Attach the new entity instance and set its state to Modified
             _context.Users.Attach(user);
             _context.Entry(user).State = EntityState.Modified;
-            return existingUser;
+
+            await _context.SaveChangesAsync();
+
+            return user;
         }
+      
     }
 }

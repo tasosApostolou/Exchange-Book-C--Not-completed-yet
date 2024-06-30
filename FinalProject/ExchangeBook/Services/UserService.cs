@@ -74,23 +74,44 @@ namespace ExchangeBook.Services
             return userToken;
         }
 
-        //public async Task DeleteUserAsync(int id)
-        //{
-        //    bool deleted;
-        //    try
-        //    {
-        //        deleted = await _unitOfWork!.UserRepositorty.DeleteAsync(id);
-        //        if (!deleted)
-        //        {
-        //            throw new UserNotFoundException("UserNotFound");
-        //        }
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
-        //        throw;
-        //    }
-        //}
+        public async Task DeleteUserAsync(int id)
+        {
+            User user;
+            //UserPersonReadOnlyDTO userPerson;
+            
+            try
+            {
+                user = await _unitOfWork!.UserRepositorty.GetAsync(id);
+                if (user == null)
+                {
+                    throw new UserNotFoundException("User not found");
+                }
+                if (user.UserRole.Value == UserRole.PERSONAL)
+                {
+                    UserPersonReadOnlyDTO userPerson = await _unitOfWork!.UserRepositorty.GetUserPersonInfoAsync(user.Username);
+                    bool deletePerson = await _unitOfWork.PersonRepository.DeleteAsync((int)userPerson.personId);
+                }
+                if (user.UserRole.Value == UserRole.STORE)
+                {
+                    UserStoreReadOnlyDTO userStore = await _unitOfWork!.UserRepositorty.GetUserStoreInfoAsync(user.Username);
+                    bool deleteStore = await _unitOfWork.PersonRepository.DeleteAsync((int)userStore.storeId);
+
+                }
+
+                bool deletedUser = await _unitOfWork!.UserRepositorty.DeleteAsync(id);
+                if (!deletedUser)
+                {
+                    throw new UserNotFoundException("UserNotFound");
+                }
+                await _unitOfWork.SaveAsync(); // Ensure changes are saved to the database
+
+            }
+            catch (Exception e)
+            {
+                _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
+                throw;
+            }
+        }
 
         public async Task<User?> GetUserByUsernameAsync(string username)
         {
@@ -196,6 +217,7 @@ namespace ExchangeBook.Services
                 if (existingUser == null) return null;
 
                 var userToUpdate = _mapper!.Map<User>(userDTO);
+                userToUpdate.Password = BCryptUtil.Encrypt(userToUpdate.Password!);
 
                 user = await _unitOfWork.UserRepositorty.UpdateUserAsync(userId, userToUpdate);
                 await _unitOfWork.SaveAsync();
@@ -243,14 +265,7 @@ namespace ExchangeBook.Services
         }
 
        
-        private Store ExtractStore(UserStoreSignupDTO? signupDTO)
-        {
-            return new Store()
-            {
-                Name = signupDTO!.Name!,
-                Address = signupDTO!.Address,
-            };
-        }
+
 
         public async Task<UserPersonReadOnlyDTO?> GetUserPersonByUsername(string? username)
         {
@@ -282,6 +297,14 @@ namespace ExchangeBook.Services
                 throw;
             }
 
+        }
+        private Store ExtractStore(UserStoreSignupDTO? signupDTO)
+        {
+            return new Store()
+            {
+                Name = signupDTO!.Name!,
+                Address = signupDTO!.Address,
+            };
         }
 
         private User ExtractUser(UserSignUpDTO signupDTO)

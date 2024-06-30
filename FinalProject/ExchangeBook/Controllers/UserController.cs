@@ -139,35 +139,29 @@ namespace ExchangeBook.Controllers
 
             return Ok(returnedUserPersonDTO);
         }
-        //[HttpPut]
-        //[Authorize(Roles = "Admin")]
-        //public async Task<ActionResult<UserDTO>> UpdateUserAccount(int id, UserDTO? userDTO)
-        //{
-        //    var userId = AppUser!.Id;
-        //    if (id != userId)
-        //    {
-        //        throw new ForbiddenException("ForbiddenAccess");
-        //    }
-        //    var user = await _applicationService.UserService.UpdateUserAsync(userId, userDTO!);
-        //    var returnedUserDTO = _mapper.Map<UserDTO>(user);
-        //    return Ok(returnedUserDTO);
-        //}
 
-        //[HttpDelete("{id}")]
-        //[Authorize(Roles = "Admin")]
-        //public async Task<IActionResult> DeleteUser(int id)
-        //{
-        //    var userId = AppUser!.Id;
-        //    if (id != userId)
-        //    {
-        //        throw new ForbiddenException("ForbiddenAccess");
-        //    }
+        [HttpPut]
+        public async Task<ActionResult<UserDTO>> UpdateUserAccount(int id, UserDTO? userDTO)
+        {
+         
+            var user = await _applicationService.UserService.UpdateUserAsync(id, userDTO!);
+            var returnedUserDTO = _mapper.Map<UserDTO>(user);
+            return Ok(returnedUserDTO);
+        }
 
-        //    await _applicationService.UserService.DeleteUserAsync(userId);
-        //    return NoContent();
-        //}
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<string>> DeleteUser(int id)
+        {
+            //var userId = AppUser!.Id;
+            //if (id != userId)
+            //{
+            //    throw new ForbiddenException("ForbiddenAccess");
+            //}
+
+            await _applicationService.UserService.DeleteUserAsync(id);
+            return "Deleted";
+        }
     }
 }
-
 
 

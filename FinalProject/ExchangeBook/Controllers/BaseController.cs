@@ -6,7 +6,6 @@ using System.Security.Claims;
 
 namespace ExchangeBook.Controllers
 {
-    // [Produces("application/json")] default since it derives from ControllerBase
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class BaseController : ControllerBase
@@ -32,7 +31,7 @@ namespace ExchangeBook.Controllers
                     {
                         return null;
                     }
-                   
+
                     var userClaimsId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
                     _ = int.TryParse(userClaimsId, out int id);
 
@@ -45,7 +44,6 @@ namespace ExchangeBook.Controllers
 
                     _appUser.Username = userClaimsName!;
                     _appUser.Email = User.FindFirst(ClaimTypes.Email)?.Value;
-
                     return _appUser;
                 }
                 return null;

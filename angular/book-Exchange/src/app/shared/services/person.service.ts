@@ -58,7 +58,7 @@ personSignal = signal<Person | null>(null);
     })
   }
 
-  deleteUser(){
-    return this.http.delete<{user:User}>(`${environment.apiURL}/${this.userService.user().role.toLowerCase()}/${this.userService.user().roleEntityId}`)
+  deletePersonUser(){
+    return this.http.delete<{delete:string}>(`https://localhost:7279/api/User/DeleteUser/${this.userService.user().userId}`)
   }
 }

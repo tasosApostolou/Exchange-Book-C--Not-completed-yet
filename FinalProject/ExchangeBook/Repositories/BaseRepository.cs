@@ -39,6 +39,8 @@ namespace ExchangeBook.Repositories
                 _dbSet.Remove(existing);
                 return true;
             }
+            await _context.SaveChangesAsync(); // Save changes after deleting
+
             return false;
         }
 

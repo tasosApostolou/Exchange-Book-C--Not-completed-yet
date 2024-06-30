@@ -3,6 +3,7 @@ import { DIALOG_DATA, DialogRef } from "@angular/cdk/dialog"
 import { Person } from "src/app/shared/interfaces/person"
 import { UserService } from "src/app/shared/services/user.service"
 import { PersonService } from "src/app/shared/services/person.service"
+import { Router } from "@angular/router"
 
  export @Component({
     imports: [],
@@ -24,13 +25,18 @@ import { PersonService } from "src/app/shared/services/person.service"
     ],
   })
   class DeleteDialogComponent {
+    router: Router = inject(Router);
     constructor(public dialogDel: DialogRef) {}
     personService = inject(PersonService)
     userService = inject(UserService)
     userDelete(){
-      this.personService.deleteUser().subscribe({
+      this.personService.deletePersonUser().subscribe({
             next:(response) =>{
-              console.log("user deleted",response)
+              this.userService.user.set(null)
+              // this.dialogDel.close()
+
+              // this.router.navigate(['login']);
+              console.log("user deleted"+response.delete)
               this.userService.logoutUser()
             },
             error:(response) => {

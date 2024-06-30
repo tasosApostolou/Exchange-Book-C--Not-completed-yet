@@ -84,7 +84,7 @@ namespace ExchangeBook
                 options.SwaggerDoc("v1", new OpenApiInfo { Title = "School API", Version = "v1" });
                 // Non-nullable reference are properly documented
                 options.SupportNonNullableReferenceTypes();
-                options.OperationFilter<AuthorizeOperationFilter>();
+                //options.OperationFilter<AuthorizeOperationFilter>();
                 options.AddSecurityDefinition(JwtBearerDefaults.AuthenticationScheme,
                     new OpenApiSecurityScheme
                     {

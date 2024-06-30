@@ -107,5 +107,30 @@ namespace ExchangeBook.Services
             }
             return person;
         }
+
+        public async Task DeletePersonAsync(int id)
+        {
+            Person person;
+            try
+            {
+                person = await _unitOfWork!.PersonRepository.GetAsync(id);
+                if (person is null)
+                {
+                    throw new PersonNotFoundException("Person not found");
+                }
+                bool deletedPerson = await _unitOfWork!.PersonRepository.DeleteAsync(id);
+                if (!deletedPerson)
+                {
+                    throw new UserNotFoundException("Person Not Found");
+                }
+                await _unitOfWork.SaveAsync(); // Ensure changes are saved to the database
+
+            }
+            catch (Exception e)
+            {
+                _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
+                throw;
+            }
+        }
     }
 }

@@ -70,7 +70,7 @@ namespace ExchangeBook.Repositories
 
         public async Task<Person?> UpdatePersonAsync(int personId, Person person)
         {
-            var existingPerson = _context.Persons.FirstOrDefault(p => p.Id == personId);
+            var existingPerson = await _context.Persons.FirstOrDefaultAsync(p => p.Id == personId);
             if (existingPerson.Id != personId && personId != person.Id)
             {
                 return null;
@@ -91,6 +91,7 @@ namespace ExchangeBook.Repositories
 
             return person;
         }
+       
     }
 }
 

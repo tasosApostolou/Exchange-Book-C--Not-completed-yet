@@ -39,7 +39,8 @@ export class UserLoginComponent {
         const decodedTokenSubject = jwtDecode(access_token) as unknown as LoggedInUser;
         this.userService.user.set({
           userId: decodedTokenSubject.userId,
-          sub: decodedTokenSubject.sub,
+          name: decodedTokenSubject.name,
+          email: decodedTokenSubject.email,
           role: decodedTokenSubject.role,
           roleEntityId: Number(decodedTokenSubject.roleEntityId)
         });
