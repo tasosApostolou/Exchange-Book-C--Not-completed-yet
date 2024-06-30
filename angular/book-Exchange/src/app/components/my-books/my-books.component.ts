@@ -32,7 +32,7 @@ export class MyBooksComponent {
   deleteBook(bookId:number){
     this.userService.deleteBookFromLoggedInPersonUser(bookId).subscribe({
       next:(response)=> {
-        console.log("book deleted",response)
+        console.log(response)
         this.loadMyBooks()
       },
       error:(response) => {

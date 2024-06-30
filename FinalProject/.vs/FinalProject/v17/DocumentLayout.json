@@ -3,15 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|C:\\Users\\User\\Desktop\\aaa\\FinalProject\\exchangebook\\repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|C:\\Users\\User\\Desktop\\aaa\\FinalProject\\exchangebook\\services\\ipersonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\services\\ipersonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|C:\\Users\\User\\Desktop\\aaa\\FinalProject\\exchangebook\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\repositories\\ipersonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|C:\\Users\\User\\Desktop\\aaa\\FinalProject\\exchangebook\\dto\\bookdtos\\bookreadonlydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\dto\\bookdtos\\bookreadonlydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|C:\\Users\\User\\Desktop\\aaa\\FinalProject\\exchangebook\\dto\\bookdtos\\bookreaddtoincludepersons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\dto\\bookdtos\\bookreaddtoincludepersons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|C:\\Users\\User\\Desktop\\aaa\\FinalProject\\exchangebook\\repositories\\ipersonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\repositories\\ipersonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,7 +35,7 @@
       "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|C:\\Users\\User\\Desktop\\aaa\\FinalProject\\exchangebook\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -27,7 +43,7 @@
       "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|c:\\users\\user\\desktop\\aaa\\finalproject\\exchangebook\\repositories\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|C:\\Users\\User\\Desktop\\aaa\\FinalProject\\exchangebook\\repositories\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\repositories\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -45,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|C:\\Users\\User\\Desktop\\aaa\\FinalProject\\exchangebook\\data\\bookexchangedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\data\\bookexchangedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|C:\\Users\\User\\Desktop\\aaa\\FinalProject\\exchangebook\\services\\ipersonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\services\\ipersonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|C:\\Users\\User\\Desktop\\aaa\\FinalProject\\exchangebook\\services\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -167,16 +179,8 @@
       "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\dto\\storedto\\storereadonlydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|C:\\Users\\User\\Desktop\\aaa\\FinalProject\\exchangebook\\dto\\bookdtos\\bookreadonlydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\dto\\bookdtos\\bookreadonlydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|C:\\Users\\User\\Desktop\\aaa\\FinalProject\\exchangebook\\dto\\bookdtos\\storebookreadonlydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\dto\\bookdtos\\storebookreadonlydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|C:\\Users\\User\\Desktop\\aaa\\FinalProject\\exchangebook\\dto\\bookdtos\\bookreaddtoincludepersons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|solutionrelative:exchangebook\\dto\\bookdtos\\bookreaddtoincludepersons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1EFB875B-72A8-4910-8B49-C77D29852ADB}|ExchangeBook\\ExchangeBook.csproj|C:\\Users\\User\\Desktop\\aaa\\FinalProject\\exchangebook\\dto\\bookdtos\\storebookinsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -253,41 +257,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IPersonRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\IPersonRepository.cs",
-              "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\IPersonRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\IPersonRepository.cs",
-              "RelativeToolTip": "ExchangeBook\\Repositories\\IPersonRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T12:48:30.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BaseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\BaseRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\BaseRepository.cs",
-              "RelativeToolTip": "ExchangeBook\\Repositories\\BaseRepository.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAACoAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T20:52:30.265Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "ExchangeBook\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\UserController.cs",
-              "RelativeToolTip": "ExchangeBook\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAIUAAAAAAAAAAAAAAKEAAAAXAAAA",
+              "Title": "PersonController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\PersonController.cs",
+              "RelativeDocumentMoniker": "ExchangeBook\\Controllers\\PersonController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\PersonController.cs",
+              "RelativeToolTip": "ExchangeBook\\Controllers\\PersonController.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAAAFcAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T12:11:47.461Z",
+              "WhenOpened": "2024-06-30T13:03:31.041Z",
               "EditorCaption": ""
             },
             {
@@ -298,14 +276,14 @@
               "RelativeDocumentMoniker": "ExchangeBook\\Services\\PersonService.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\PersonService.cs",
               "RelativeToolTip": "ExchangeBook\\Services\\PersonService.cs",
-              "ViewState": "AQIAAGIAAAAAAAAAAAAAAHsAAABHAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAAEIAAABbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T19:41:30.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\IUserService.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Services\\IUserService.cs",
@@ -313,25 +291,99 @@
               "RelativeToolTip": "ExchangeBook\\Services\\IUserService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T13:55:51.601Z",
+              "WhenOpened": "2024-06-25T13:55:51.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookReadDTOIncludePersons.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\BookDTOs\\BookReadDTOIncludePersons.cs",
+              "RelativeDocumentMoniker": "ExchangeBook\\DTO\\BookDTOs\\BookReadDTOIncludePersons.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\BookDTOs\\BookReadDTOIncludePersons.cs",
+              "RelativeToolTip": "ExchangeBook\\DTO\\BookDTOs\\BookReadDTOIncludePersons.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T11:53:50.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookReadOnlyDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\BookDTOs\\BookReadOnlyDTO.cs",
+              "RelativeDocumentMoniker": "ExchangeBook\\DTO\\BookDTOs\\BookReadOnlyDTO.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\BookDTOs\\BookReadOnlyDTO.cs",
+              "RelativeToolTip": "ExchangeBook\\DTO\\BookDTOs\\BookReadOnlyDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T13:38:49.054Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "IPersonService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\IPersonService.cs",
+              "RelativeDocumentMoniker": "ExchangeBook\\Services\\IPersonService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\IPersonService.cs",
+              "RelativeToolTip": "ExchangeBook\\Services\\IPersonService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T18:00:28.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ExchangeBook\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ExchangeBook\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAAAKEAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T12:11:47.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "ExchangeBook\\Repositories\\BaseRepository.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAACoAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T20:52:30.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IPersonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\IPersonRepository.cs",
+              "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\IPersonRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\IPersonRepository.cs",
+              "RelativeToolTip": "ExchangeBook\\Repositories\\IPersonRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T12:48:30.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "PersonRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\PersonRepository.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\PersonRepository.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\PersonRepository.cs",
               "RelativeToolTip": "ExchangeBook\\Repositories\\PersonRepository.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAAADEAAAA3AAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAADEAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-30T10:36:33.116Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "IBaseRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\IBaseRepository.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\IBaseRepository.cs",
@@ -339,12 +391,11 @@
               "RelativeToolTip": "ExchangeBook\\Repositories\\IBaseRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T12:21:34.744Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-30T12:21:34.744Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "UserRepositorty.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\UserRepositorty.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\UserRepositorty.cs",
@@ -356,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "BaseController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\BaseController.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Controllers\\BaseController.cs",
@@ -368,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\IUserRepository.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\IUserRepository.cs",
@@ -380,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "BookExchangeDbContext.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Data\\BookExchangeDbContext.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Data\\BookExchangeDbContext.cs",
@@ -392,19 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IPersonService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\IPersonService.cs",
-              "RelativeDocumentMoniker": "ExchangeBook\\Services\\IPersonService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\IPersonService.cs",
-              "RelativeToolTip": "ExchangeBook\\Services\\IPersonService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T18:00:28.708Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "IBookService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\IBookService.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Services\\IBookService.cs",
@@ -416,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "StoreBook.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Data\\StoreBook.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Data\\StoreBook.cs",
@@ -428,7 +467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "BookController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Controllers\\BookController.cs",
@@ -440,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Program.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Program.cs",
@@ -452,7 +491,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Data\\User.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Data\\User.cs",
@@ -464,7 +503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Data\\Person.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Data\\Person.cs",
@@ -476,7 +515,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "MapperConfig.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Configuration\\MapperConfig.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Configuration\\MapperConfig.cs",
@@ -488,7 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\models\\ApplicationUser.cs",
@@ -500,7 +539,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "StoreBookService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\StoreBookService.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Services\\StoreBookService.cs",
@@ -512,7 +551,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "StoreService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\StoreService.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Services\\StoreService.cs",
@@ -524,7 +563,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "IStoreService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\IStoreService.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Services\\IStoreService.cs",
@@ -536,7 +575,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "IStoreBookService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\IStoreBookService.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Services\\IStoreBookService.cs",
@@ -548,7 +587,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "IApplicationService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\IApplicationService.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Services\\IApplicationService.cs",
@@ -560,7 +599,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "BookService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Services\\BookService.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Services\\BookService.cs",
@@ -572,7 +611,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "StoreBookRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\StoreBookRepository.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\StoreBookRepository.cs",
@@ -584,7 +623,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "RepositoriesDIExtensions.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\RepositoriesDIExtensions.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\RepositoriesDIExtensions.cs",
@@ -596,7 +635,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "NotificationRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\NotificationRepository.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\NotificationRepository.cs",
@@ -608,7 +647,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "StoreRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\StoreRepository.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\StoreRepository.cs",
@@ -620,7 +659,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\IUnitOfWork.cs",
@@ -632,7 +671,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "INotificationRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\INotificationRepository.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\INotificationRepository.cs",
@@ -644,7 +683,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "IBookRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\IBookRepository.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\IBookRepository.cs",
@@ -656,7 +695,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "IStoreRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\IStoreRepository.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\IStoreRepository.cs",
@@ -668,7 +707,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "IStoreBookRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\IStoreBookRepository.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\IStoreBookRepository.cs",
@@ -680,7 +719,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "IAuthorRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\IAuthorRepository.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\IAuthorRepository.cs",
@@ -692,7 +731,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "BookRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\BookRepository.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\BookRepository.cs",
@@ -704,7 +743,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "AuthorRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Repositories\\AuthorRepository.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Repositories\\AuthorRepository.cs",
@@ -716,7 +755,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "Store.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Data\\Store.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Data\\Store.cs",
@@ -728,7 +767,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "StoreController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Controllers\\StoreController.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Controllers\\StoreController.cs",
@@ -740,7 +779,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "StoreReadOnlyDTO.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\StoreDTO\\StoreReadOnlyDTO.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\DTO\\StoreDTO\\StoreReadOnlyDTO.cs",
@@ -752,19 +791,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "BookReadOnlyDTO.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\BookDTOs\\BookReadOnlyDTO.cs",
-              "RelativeDocumentMoniker": "ExchangeBook\\DTO\\BookDTOs\\BookReadOnlyDTO.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\BookDTOs\\BookReadOnlyDTO.cs",
-              "RelativeToolTip": "ExchangeBook\\DTO\\BookDTOs\\BookReadOnlyDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T13:38:49.054Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "StoreBookReadOnlyDTO.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\BookDTOs\\StoreBookReadOnlyDTO.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\DTO\\BookDTOs\\StoreBookReadOnlyDTO.cs",
@@ -776,19 +803,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "BookReadDTOIncludePersons.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\BookDTOs\\BookReadDTOIncludePersons.cs",
-              "RelativeDocumentMoniker": "ExchangeBook\\DTO\\BookDTOs\\BookReadDTOIncludePersons.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\BookDTOs\\BookReadDTOIncludePersons.cs",
-              "RelativeToolTip": "ExchangeBook\\DTO\\BookDTOs\\BookReadDTOIncludePersons.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T11:53:50.277Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "StoreBookInsertDTO.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\BookDTOs\\StoreBookInsertDTO.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\DTO\\BookDTOs\\StoreBookInsertDTO.cs",
@@ -800,7 +815,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "Author.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Data\\Author.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Data\\Author.cs",
@@ -812,7 +827,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "AuthorReadOnlyDTO.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\AuthorDTOs\\AuthorReadOnlyDTO.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\DTO\\AuthorDTOs\\AuthorReadOnlyDTO.cs",
@@ -824,7 +839,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "JwtTokenDTO.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\UserDTOs\\JwtTokenDTO.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\DTO\\UserDTOs\\JwtTokenDTO.cs",
@@ -836,7 +851,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "ErrorHandlerMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Helpers\\ErrorHandlerMiddleware.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Helpers\\ErrorHandlerMiddleware.cs",
@@ -848,7 +863,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "NotificationType.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\models\\NotificationType.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\models\\NotificationType.cs",
@@ -860,7 +875,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "UserStoreReadOnlyDTO.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\UserDTOs\\UserStoreReadOnlyDTO.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\DTO\\UserDTOs\\UserStoreReadOnlyDTO.cs",
@@ -872,7 +887,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "UserFiltersDTO.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\DTO\\UserDTOs\\UserFiltersDTO.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\DTO\\UserDTOs\\UserFiltersDTO.cs",
@@ -884,7 +899,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ExchangeBook\\Properties\\launchSettings.json",
@@ -896,7 +911,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "ExchangeBook.csproj",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\ExchangeBook.csproj",
               "RelativeDocumentMoniker": "ExchangeBook\\ExchangeBook.csproj",
@@ -908,7 +923,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "BCryptUtil.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\ExchangeBook\\Security\\BCryptUtil.cs",
               "RelativeDocumentMoniker": "ExchangeBook\\Security\\BCryptUtil.cs",
@@ -920,7 +935,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "Microsoft.EntityFrameworkCore.props",
               "DocumentMoniker": "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.6\\buildTransitive\\net8.0\\Microsoft.EntityFrameworkCore.props",
               "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.6\\buildTransitive\\net8.0\\Microsoft.EntityFrameworkCore.props",
@@ -932,7 +947,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": ".filenesting.json",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\aaa\\FinalProject\\.filenesting.json",
               "RelativeDocumentMoniker": ".filenesting.json",

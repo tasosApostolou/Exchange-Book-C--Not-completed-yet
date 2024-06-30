@@ -49,7 +49,7 @@ this.router.navigate(['login']);
   
   // }
   deleteBookFromLoggedInPersonUser(bookId:number): Observable<any>{
-    return this.http.delete<string>(`https://localhost:7279/api/Person/DeletesPersonBook/personal/${this.user().roleEntityId}/book/${bookId}
+    return this.http.delete<{book:Book}>(`https://localhost:7279/api/Person/DeletesPersonBook/personal/${this.user().roleEntityId}/book/${bookId}
 `)
   
   }

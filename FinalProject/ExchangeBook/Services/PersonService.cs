@@ -64,24 +64,31 @@ namespace ExchangeBook.Services
             return books;
         }
 
-        public async Task<bool> DeletePersonBookAsync(int personId, int bookId)
+        public async Task<BookReadOnlyDTO?> DeletePersonBookAsync(int personId, int bookId)
         {
             bool deleted = false;
             Person person;
-            Book book;
-
+            Book? book;
+            BookReadOnlyDTO? bookToReturn;
             try
             {
                 if (await _unitOfWork.PersonRepository.GetAsync(personId) == null) throw new PersonNotFoundException("Person not found");
-                if (await _unitOfWork.BookRepository.GetAsync(bookId) == null) throw new BookNotFoundException("Book Not Found");
+                book = await _unitOfWork.BookRepository.GetAsync(bookId);
+                if (book == null) throw new BookNotFoundException("Book Not Found");
+                bookToReturn = _mapper.Map<BookReadOnlyDTO>(book);
                 deleted = await _unitOfWork.PersonRepository.DeletePersonBookAsync(personId, bookId);
-
+                if (!deleted)
+                {
+                    throw new ServerGenericException("Book Not deleted");
+                }
+                return bookToReturn;
             }
             catch (Exception e)
             {
                 _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
+                return null;
             }
-            return deleted;
+           
         }
 
         public async Task<Person?> UpdatePersonAsync(int personId, PersonDTO personDTO)

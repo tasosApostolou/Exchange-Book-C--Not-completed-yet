@@ -76,15 +76,16 @@ namespace ExchangeBook.Controllers
         }
 
         [HttpDelete("personal/{personId}/book/{bookId}")]
-        public async Task<IActionResult> DeletesPersonBook(int personId, int bookId)
+        public async Task<ActionResult<BookReadOnlyDTO>> DeletesPersonBook(int personId, int bookId)
         {
           
-             bool deleted = await _applicationService.PersonService.DeletePersonBookAsync(personId, bookId);
-            if (!deleted)
+             BookReadOnlyDTO deletedDTO = await _applicationService.PersonService.DeletePersonBookAsync(personId, bookId);
+            if (deletedDTO == null)
             {
-                throw new ServerGenericException("book not found or not deleted or server erro");
+                throw new ServerGenericException("book not found or not deleted or server error");
             }
-                return Ok("Deleted");
+                //return Ok("Deleted");
+                return Ok(deletedDTO);
         }
 
         [HttpPut("{personId}")]
