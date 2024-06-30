@@ -7,5 +7,6 @@ namespace ExchangeBook.Repositories
         Task<List<User>> GetAllUsersStoresAsync();
         Task<Store> GetStoreIncludeBooksAsync(int id);
 
+
     }
 }

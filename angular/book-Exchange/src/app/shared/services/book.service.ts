@@ -18,7 +18,7 @@ addBook(book:InsertBook){
   return this.http.post<{data:JSON}>(`https://localhost:7279/api/Person/AddBookToPerson/${this.userService.user().roleEntityId}/books`,book)
 }
 addStoreBook(storeBook:InsertStoreBook){
-  return this.http.post<{data:JSON}>(`https://localhost:7279/api/Store/AddBookToStore/${this.userService.user().roleEntityId}/books`,storeBook)
+  return this.http.post<{data:JSON}>(`https://localhost:7279/api/Store/AddBookToStore/${this.userService.user().roleEntityId}`,storeBook)
 }
 getBooksByTitle(title:string){
   this.title=title

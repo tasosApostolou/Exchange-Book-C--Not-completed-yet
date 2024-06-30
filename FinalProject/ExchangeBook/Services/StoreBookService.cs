@@ -44,18 +44,19 @@ namespace ExchangeBook.Services
             }
         }
 
-        public async Task RemoveBookFromStoreAsync(int storeId, int bookId)
+        public async Task<StoreBook?> RemoveBookFromStoreAsync(int storeId, int bookId)
         {
-            bool deleted;
+            //bool deleted;
+            StoreBook? storeBook;
             try
             {
-                deleted = await _unitOfWork.StoreBookRepository.RemoveBookFromStoreAsync(storeId,bookId);
-                if (!deleted)
+                storeBook = await _unitOfWork.StoreBookRepository.RemoveBookFromStoreAsync(storeId,bookId);
+                if (storeBook is null)
                 {
                     throw new BookNotFoundException("Book Not Found");
                 }
                 await _unitOfWork.SaveAsync();
-              
+              return storeBook;
             }
             catch (BookNotFoundException e)
             {
