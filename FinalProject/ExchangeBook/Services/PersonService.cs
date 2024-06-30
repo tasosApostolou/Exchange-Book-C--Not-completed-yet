@@ -118,10 +118,10 @@ namespace ExchangeBook.Services
                 {
                     throw new PersonNotFoundException("Person not found");
                 }
-                bool deletedPerson = await _unitOfWork!.PersonRepository.DeleteAsync(id);
-                if (!deletedPerson)
+                Person? deletedPerson = await _unitOfWork!.PersonRepository.DeleteAsync(id);
+                if (deletedPerson != null)
                 {
-                    throw new UserNotFoundException("Person Not Found");
+                    throw new UserNotFoundException("Person Not Deleted");
                 }
                 await _unitOfWork.SaveAsync(); // Ensure changes are saved to the database
 

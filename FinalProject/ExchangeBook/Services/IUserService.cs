@@ -13,8 +13,7 @@ namespace ExchangeBook.Services
         Task<User?> UpdateUserAsync(int userId, UserDTO userDTO);
         Task<User?> GetUserByUsernameAsync(string username);
         Task<UserPersonReadOnlyDTO?> GetUserPersonByUsername(string? username);
-
-        Task DeleteUserAsync(int id);
+        Task<UserReadOnlyDTO?> DeleteUserAsync(int id);
         Task<string> CreateUserToken(int userId, string? userName, string? email, UserRole? userRole,
             string appSecurityKey);
 

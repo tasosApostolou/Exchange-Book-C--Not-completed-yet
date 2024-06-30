@@ -31,17 +31,17 @@ namespace ExchangeBook.Repositories
             _context.Entry(entity).State = EntityState.Modified;
         }
 
-        public virtual async Task<bool> DeleteAsync(int id)
+        public virtual async Task<T?> DeleteAsync(int id)
         {
             T? existing = await _dbSet.FindAsync(id);
             if (existing is not null)
             {
                 _dbSet.Remove(existing);
-                return true;
+                return null;
             }
             await _context.SaveChangesAsync(); // Save changes after deleting
-
-            return false;
+            Console.WriteLine("Existing" + existing.ToString());
+            return existing;
         }
 
         public virtual async Task<T?> GetAsync(int id)

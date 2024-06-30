@@ -9,7 +9,7 @@ namespace ExchangeBook.Repositories
         Task AddAsync(T entity);
         Task AddRangeAsync(IEnumerable<T> entities);
         void UpdateAsync(T entity);
-        Task<bool> DeleteAsync(int id);
+        Task<T?> DeleteAsync(int id);
         Task<int> GetCountAsync();
         //Task<User> GetUserAsync(string username);
     }

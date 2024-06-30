@@ -32,11 +32,11 @@ import { Router } from "@angular/router"
     userDelete(){
       this.personService.deletePersonUser().subscribe({
             next:(response) =>{
-              this.userService.user.set(null)
+              // this.userService.user.set(null)
               // this.dialogDel.close()
 
               // this.router.navigate(['login']);
-              console.log("user deleted"+response.delete)
+              console.log(response)
               this.userService.logoutUser()
             },
             error:(response) => {

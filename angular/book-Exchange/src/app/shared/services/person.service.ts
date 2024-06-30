@@ -59,6 +59,6 @@ personSignal = signal<Person | null>(null);
   }
 
   deletePersonUser(){
-    return this.http.delete<{delete:string}>(`https://localhost:7279/api/User/DeleteUser/${this.userService.user().userId}`)
+    return this.http.delete<{user:User}>(`https://localhost:7279/api/User/DeleteUser/${this.userService.user().userId}`)   
   }
 }

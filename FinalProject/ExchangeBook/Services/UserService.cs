@@ -74,14 +74,15 @@ namespace ExchangeBook.Services
             return userToken;
         }
 
-        public async Task DeleteUserAsync(int id)
+        public async Task<UserReadOnlyDTO?> DeleteUserAsync(int id)
         {
-            User user;
-            //UserPersonReadOnlyDTO userPerson;
-            
+            User? user;
+            UserReadOnlyDTO? userReadOnlyDTO;
             try
             {
                 user = await _unitOfWork!.UserRepositorty.GetAsync(id);
+                userReadOnlyDTO = _mapper.Map<UserReadOnlyDTO>(user);
+
                 if (user == null)
                 {
                     throw new UserNotFoundException("User not found");
@@ -89,22 +90,22 @@ namespace ExchangeBook.Services
                 if (user.UserRole.Value == UserRole.PERSONAL)
                 {
                     UserPersonReadOnlyDTO userPerson = await _unitOfWork!.UserRepositorty.GetUserPersonInfoAsync(user.Username);
-                    bool deletePerson = await _unitOfWork.PersonRepository.DeleteAsync((int)userPerson.personId);
+                    Person deletePerson = await _unitOfWork.PersonRepository.DeleteAsync((int)userPerson.personId);
                 }
                 if (user.UserRole.Value == UserRole.STORE)
                 {
                     UserStoreReadOnlyDTO userStore = await _unitOfWork!.UserRepositorty.GetUserStoreInfoAsync(user.Username);
-                    bool deleteStore = await _unitOfWork.PersonRepository.DeleteAsync((int)userStore.storeId);
+                    Store deleteStore = await _unitOfWork.StoreRepository.DeleteAsync((int)userStore.storeId);
 
                 }
 
-                bool deletedUser = await _unitOfWork!.UserRepositorty.DeleteAsync(id);
-                if (!deletedUser)
+                User deletedUser = await _unitOfWork!.UserRepositorty.DeleteAsync(id);
+                if (deletedUser != null)
                 {
-                    throw new UserNotFoundException("UserNotFound");
+                    throw new UserNotFoundException("User did not deleted");
                 }
                 await _unitOfWork.SaveAsync(); // Ensure changes are saved to the database
-
+                return userReadOnlyDTO;
             }
             catch (Exception e)
             {

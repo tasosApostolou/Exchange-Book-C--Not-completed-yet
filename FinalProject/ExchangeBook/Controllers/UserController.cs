@@ -150,7 +150,7 @@ namespace ExchangeBook.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<string>> DeleteUser(int id)
+        public async Task<UserReadOnlyDTO> DeleteUser(int id)
         {
             //var userId = AppUser!.Id;
             //if (id != userId)
@@ -158,8 +158,10 @@ namespace ExchangeBook.Controllers
             //    throw new ForbiddenException("ForbiddenAccess");
             //}
 
-            await _applicationService.UserService.DeleteUserAsync(id);
-            return "Deleted";
+            UserReadOnlyDTO? user = await _applicationService.UserService.DeleteUserAsync(id);
+            return user;
+
+            //return _mapper.Map<UserReadOnlyDTO>(user) ;
         }
     }
 }
